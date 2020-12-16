@@ -432,8 +432,8 @@
 							</div>
 						</div>
 						<div class="feedback-wrap">
-							<div class="feedback-title">Не нашли ответ <br>на свой вопрос?</div>
-							<div class="feedback-desc">Отправьте нам сообщение <br>и мы обязательно ответим!</div>
+							<div class="feedback-title">Не нашли ответ <br class="mobile-visible">на свой вопрос?</div>
+							<div class="feedback-desc">Отправьте нам сообщение <br class="mobile-visible">и мы обязательно ответим!</div>
 							<form class="feedback-form">
 								<div class="input-field">
 		                    		<input type="text" name="name" placeholder="Ваше имя" required>
@@ -453,6 +453,16 @@
 		                    	</div>
 		                    	<div class="input-field">
 		                    		<textarea name="message" placeholder="Текст сообщения" required></textarea>
+		                    	</div>
+		                    	<div class="feedback-desc">Введите символы с картинки</div>
+		                    	<div class="captcha-wrap mb20">
+		                    		<div class="captcha-field">
+		                    			<img src="img/captcha.png" alt="" style="mix-blend-mode: multiply;"> <!-- убрать mix-blend-mode для капчи без белого фона -->
+		                    			<a href="#!" class="reload-captcha"></a>
+		                    		</div>
+		                    		<div class="input-field">
+			                    		<input type="text" name="captcha" required>
+			                    	</div>
 		                    	</div>
 		                    	<div class="btn-wrapper mw320">
 									<button class="btn btn1">Отправить</button>
@@ -526,15 +536,15 @@
                     <div class="auth-form">
                     	<div class="auth-text">Или войти через:</div>
                     	<div class="auth-socs">
-                    		<a href="#!" class="auth-soc">
+                    		<button class="auth-soc">
 	                    		<img src="img/auth-fb.svg" alt="">
-	                    	</a>
-	                    	<a href="#!" class="auth-soc">
+	                    	</button>
+	                    	<button class="auth-soc">
 	                    		<img src="img/auth-vk.svg" alt="">
-	                    	</a>
-	                    	<a href="#!" class="auth-soc">
+	                    	</button>
+	                    	<button class="auth-soc">
 	                    		<img src="img/auth-ggl.svg" alt="">
-	                    	</a>
+	                    	</button>
                     	</div>
                     </div>
                     <div class="reg-text">
@@ -557,15 +567,15 @@
                     <div class="auth-form">
                     	<div class="auth-text">Через соцсети:</div>
                     	<div class="auth-socs">
-                    		<a href="#!" class="auth-soc">
+                    		<button class="auth-soc">
 	                    		<img src="img/auth-fb.svg" alt="">
-	                    	</a>
-	                    	<a href="#!" class="auth-soc">
+	                    	</button>
+	                    	<button class="auth-soc">
 	                    		<img src="img/auth-vk.svg" alt="">
-	                    	</a>
-	                    	<a href="#!" class="auth-soc">
+	                    	</button>
+	                    	<button class="auth-soc">
 	                    		<img src="img/auth-ggl.svg" alt="">
-	                    	</a>
+	                    	</button>
                     	</div>
                     </div>
                     <div class="popup__error"></div>
@@ -723,7 +733,7 @@
 		</div>
 	</div>
 
-	<script src="libs/jquery-3.4.1.min.js"></script>
+	<script src="libs/jquery-3.5.1.min.js"></script>
 	<script src="libs/select2/select2.min.js"></script>
 	<script src="libs/jquery.validate.min.js"></script>
 	<script src="libs/scrollbar/jquery.scrollbar.min.js"></script>
