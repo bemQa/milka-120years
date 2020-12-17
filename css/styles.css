@@ -1333,8 +1333,19 @@ span.error {
 }
 
 .captcha-wrap {
+    position: relative;
     display: flex;
     justify-content: space-between;
+}
+
+.captcha-wrap .popup__error {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: #FAE3C3;
 }
 
 .captcha-field {
@@ -1769,20 +1780,33 @@ span.error {
     z-index: 0;
 }
 
-.faq-page .container {
+.inner-page .container {
     z-index: 1;
 }
 
-.inner-page .inner-heart {
-	position: absolute;
-	top: -30px;
-	left: 15px;
-	max-width: 170px;
-	width: 100%;
+.winner-main-title {
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px 0 20px;
+}
+
+.winner-main-title span {
+    display: block;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.million-text {
+    max-width: 443px;
+    width: 100%;
+    margin: 0 auto 50px;
 }
 
 .winners-container {
-    max-width: 888px;
+    max-width: 800px;
     width: 100%;
     margin: 40px auto 60px;
 }
@@ -1806,10 +1830,10 @@ span.error {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    color: #644F9A;
+    color: #fff;
     width: 100%;
     background: transparent;
-    border-bottom: 1px #644F9A solid;
+    border-bottom: 1px #fff solid;
 }
 
 .date-filter::before {
@@ -1838,6 +1862,99 @@ span.error {
 	color: #0878CA;
 }
 
+.date-filter .select {
+    min-width: 100px;
+}
+
+.date-filter .select2-container--below {
+    z-index: 3;
+}
+
+.date-filter .select2-container .select2-selection--single {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 10px;
+    width: 100%;
+    height: 20px;
+    padding: 0 20px 0 10px;
+    border: 0;
+    border-bottom: 0;
+    box-shadow: none;
+}
+
+/*.date-filter .select2-container--default.select2-container--open.select2-container--below .select2-selection--single {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}*/
+
+.date-filter .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #F8EB14;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.date-filter .select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding-right: 0;
+    color: #F8EB14;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.date-filter .select2-container--open.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #F8EB14;
+}
+
+.date-filter .select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 5px;
+    transition: all .2s linear;
+}
+
+.date-filter .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: none;
+    width: 7px;
+    height: 5px;
+    background: url(../img/arrow-down-yellow.svg) center no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+
+.date-filter .select2-container--open .select2-dropdown--below {
+    padding-top: 0;
+    top: 0;
+    border: 1px solid #2680D1;
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.date-filter .select2-results__option {
+    font-size: 12px;
+    height: 20px;
+    padding: 4px 10px;
+}
+
+.date-filter .select2-results__options {
+    color: #003595;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.date-filter .select2-container--default .select2-results__option--highlighted[aria-selected],
+.date-filter .select2-container--default .select2-results__option[aria-selected=true] {
+    color: #003595;
+    background-color: rgba(255, 245, 104, 0.3);
+}
+
 .phone-filter {
     max-width: 400px;
     margin: 0;
@@ -1849,6 +1966,7 @@ span.error {
     font-size: 18px;
     padding-left: 24px;
     border: 2px solid rgba(59, 44, 114, 0.3);
+    box-shadow: -3px 3px 10px rgba(83, 68, 122, 0.81), 2px -3px 9px #826EB4, inset -4px 4px 4px #F3EAFE, inset 3px -3px 4px rgba(144, 119, 202, 0.3);
     border-radius: 30px;
 }
 
@@ -1874,29 +1992,31 @@ span.error {
 }
 
 .winners {
-	max-width: 888px;
+    position: relative;
+	max-width: 800px;
     width: 100%;
     margin: auto;
     padding: 30px 40px 30px;
-    background: #FBFBFB;
-	box-shadow: 2px 2px 11px rgba(59, 34, 130, 0.26);
-	border-radius: 30px;
-	overflow: hidden;
+    background: #9179C2;
+    box-shadow: 0px -6px 24px rgba(205, 188, 242, 0.1), 0px 7px 20px rgba(44, 25, 98, 0.5), inset 0px 4px 4px rgba(205, 188, 242, 0.3), inset 0px -4px 2px rgba(205, 188, 242, 0.2);
+    border-radius: 33px;
+}
+
+.winners-decor {
+    position: absolute;
+    top: -50px;
+    left: -80px;
 }
 
 .table-wrapper {
-    max-width: 888px;
+    max-width: 600px;
     width: 100%;
-    max-height: 340px;
+    max-height: 300px;
     margin: auto;
 }
 
 .table-wrapper.scroll-content {
     padding-right: 18px;
-}
-
-.winners-table {
-    margin-bottom: 40px;
 }
 
 table {
@@ -1908,21 +2028,21 @@ table th {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 1.15;
-	color: #3B2282;
+	color: #fff;
     text-align: left;
     padding: 0 20px 10px 0;
 }
 
 table tbody {
 	font-weight: normal;
-	font-size: 21px;
+	font-size: 20px;
 	line-height: 1;
-	color: #3B2282;
+	color: #fff;
     text-align: left;
 }
 
 table td {
-    padding: 10px 20px 10px 0;
+    padding: 13px 20px 13px 0;
     min-width: 190px;
 }
 
@@ -4015,9 +4135,7 @@ table td:nth-child(3) {
 .winner-monthly-wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 800px;
-    width: 100%;
-    margin: 200px auto 0;
+    margin: 0 auto;
 }
 
 .winner-monthly {
@@ -4029,44 +4147,47 @@ table td:nth-child(3) {
     width: 260px;
     height: 170px;
     margin: 60px auto 70px;
-    padding: 70px 25px 25px;
-    background: #fff;
-    box-shadow: 2px 2px 11px rgba(59, 34, 130, 0.26);
-    border-radius: 30px;
+    padding: 90px 25px 25px;
+    background: #9179C2;
+    box-shadow: 0px -6px 24px rgba(205, 188, 242, 0.1), 0px 7px 20px rgba(44, 25, 98, 0.5), inset 0px 4px 4px rgba(205, 188, 242, 0.3), inset 0px -4px 2px rgba(205, 188, 242, 0.2);
+    border-radius: 33px;
 }
 
 .winner-monthly-img {
     position: absolute;
-    top: -184px;
+    top: -81px;
     left: 0;
     right: 0;
     bottom: auto;
-    width: 260px;
-    height: 260px;
+    width: 162px;
+    height: 162px;
     margin: auto;
 }
 
-.winner-monthly-title {
+.winner-monthly-img::before {
+    content: '';
     position: absolute;
-    top: -28px;
-    left: 0;
-    right: 0;
-    width: 210px;
-    margin: auto;
-}
-
-.winner-monthly-title2 {
-    position: absolute;
-    left: 0;
-    right: 0;
+    top: 0;
+    left: -133px;
+    right: -100px;
     bottom: 0;
+    width: 284px;
+    height: 249px;
     margin: auto;
+    background: url(../img/winner-lightning.png) center no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.winner-monthly-img img {
+    position: relative;
 }
 
 .winner-monthly-name {
     font-weight: 600;
     font-size: 21px;
     line-height: 1;
+    text-transform: uppercase;
 }
 
 .winner-monthly-city {
@@ -4076,32 +4197,8 @@ table td:nth-child(3) {
 
 .winner-monthly-name,
 .winner-monthly-city {
+    position: relative;
     text-align: center;
-}
-
-.winner-monthly-decor1 {
-    position: absolute;
-    top: -190px;
-    left: auto;
-    right: 0;
-}
-
-.winner-monthly-decor2 {
-    position: absolute;
-    top: -165px;
-    left: -25px;
-}
-
-.winner-monthly-decor3 {
-    position: absolute;
-    top: 45px;
-    right: 5px;
-}
-
-.winner-monthly-decor4 {
-    position: absolute;
-    top: 25px;
-    left: -6px;
 }
 
 .cookies-page {
@@ -4480,6 +4577,13 @@ table td:nth-child(3) {
     .products-group-title::after {
         max-width: 280px;
     }
+
+    .winner-monthly-wrapper {
+        flex-wrap: wrap;
+        max-width: 600px;
+        width: 100%;
+    }
+
 
     .no-slide {
     	right: -10%;
@@ -4978,14 +5082,13 @@ table td:nth-child(3) {
 
 	.filters {
 		flex-direction: column;
-	}
-
-	.date-filter {
-		margin-bottom: 40px;
+        margin-bottom: 20px;
 	}
 
 	.phone-filter {
 		max-width: 300px;
+        margin-bottom: 20px !important;
+        order: -1;
 	}
 
 	.phone-filter input:not([type="checkbox"]) {
@@ -4994,10 +5097,6 @@ table td:nth-child(3) {
 
 	.winners {
 		padding: 20px 10px 30px;
-	}
-
-	.winners-table {
-		margin-bottom: 30px;
 	}
 
 	table th {
@@ -5032,7 +5131,8 @@ table td:nth-child(3) {
 		line-height: 19px;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 170px;
+        max-width: 300px;
+        margin: auto;
 	}
 
 	.charity-page {
@@ -5701,18 +5801,78 @@ table td:nth-child(3) {
         text-align: left;
     }
 
+    .million-text {
+        margin-bottom: 20px;
+    }
+
     .winner-monthly-wrapper {
         flex-direction: column;
+        flex-wrap: nowrap;
         margin-top: 0;
     }
 
     .winner-monthly {
         flex-direction: column;
-        width: 260px;
-        min-height: 170px;
+        align-items: flex-start;
+        width: 100%;
+        min-height: 62px;
         height: auto;
-        margin: 230px auto 30px;
-        padding: 90px 25px 15px;
+        margin: 15px auto;
+        padding: 10px 0 10px 90px;
+    }
+
+    .winner-monthly-img {
+        top: 0;
+        left: -10px;
+        right: auto;
+        bottom: 0;
+        width: 90px;
+        height: 90px;
+    }
+
+    .winner-monthly-img::before {
+        width: 111px;
+        height: 97px;
+    }
+
+    .winner-monthly-name {
+        font-size: 16px;
+    }
+
+    .winner-monthly-city {
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    .winner-monthly-name, 
+    .winner-monthly-city {
+        text-align: left;
+    }
+
+    .winner-main-title {
+        max-width: 200px;
+        margin-left: auto;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .title + .winner-main-title {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .winner-main-title span {
+        font-size: 14px;
+        line-height: 1;
+        margin-top: 5px;
+    }
+
+    .winners-decor {
+        top: -250px;
+        left: -210px;
+        right: 0;
+        margin: auto;
     }
 
     .main-cookie-h1 {
