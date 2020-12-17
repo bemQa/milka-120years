@@ -583,6 +583,7 @@ body .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
 
 .select2-container--default .select2-results>.select2-results__options {
     max-height: 250px;
+    padding-top: 10px;
 }
 
 .select2-results__option {
@@ -1863,7 +1864,7 @@ span.error {
 }
 
 .date-filter .select {
-    min-width: 100px;
+    min-width: 180px;
 }
 
 .date-filter .select2-container--below {
@@ -1891,20 +1892,20 @@ span.error {
 }*/
 
 .date-filter .select2-container--default .select2-selection--single .select2-selection__placeholder {
-    color: #F8EB14;
+    color: #fff;
     font-size: 18px;
     font-weight: normal;
 }
 
 .date-filter .select2-container--default .select2-selection--single .select2-selection__rendered {
     padding-right: 0;
-    color: #F8EB14;
+    color: #fff;
     font-size: 18px;
     font-weight: normal;
 }
 
 .date-filter .select2-container--open.select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #F8EB14;
+    color: #fff;
 }
 
 .date-filter .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -1919,9 +1920,9 @@ span.error {
     right: 0;
     bottom: 0;
     border: none;
-    width: 7px;
-    height: 5px;
-    background: url(../img/arrow-down-yellow.svg) center no-repeat;
+    width: 13px;
+    height: 14px;
+    background: url(../img/arrow-down.svg) center no-repeat;
     background-size: contain;
     margin: auto;
 }
@@ -1929,7 +1930,8 @@ span.error {
 .date-filter .select2-container--open .select2-dropdown--below {
     padding-top: 0;
     top: 0;
-    border: 1px solid #2680D1;
+    background: #CDBCF2;
+    border: transparent;
     border-radius: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -1938,21 +1940,36 @@ span.error {
 }
 
 .date-filter .select2-results__option {
-    font-size: 12px;
-    height: 20px;
-    padding: 4px 10px;
+    position: relative;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    height: 30px;
+    padding: 10px;
+}
+
+.date-filter .select2-results__option:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    height: 1px;
+    background: #3B2C72;
 }
 
 .date-filter .select2-results__options {
-    color: #003595;
+    color: #3B2C72;
     font-weight: normal;
     font-size: 12px;
 }
 
 .date-filter .select2-container--default .select2-results__option--highlighted[aria-selected],
 .date-filter .select2-container--default .select2-results__option[aria-selected=true] {
-    color: #003595;
-    background-color: rgba(255, 245, 104, 0.3);
+    color: #3B2C72;
+    background-color: rgba(59, 44, 114, .1);
 }
 
 .phone-filter {
@@ -3830,7 +3847,7 @@ table td:nth-child(3) {
 .tm-magnit .date-filter .select2-container--default .select2-selection--single .select2-selection__rendered {
     padding-right: 0;
     color: #3B2282;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .tm-magnit .date-filter .select2-container--open.select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -5850,7 +5867,7 @@ table td:nth-child(3) {
     }
 
     .winner-main-title {
-        max-width: 200px;
+        max-width: 185px;
         margin-left: auto;
         font-size: 18px;
         line-height: 24px;
