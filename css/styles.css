@@ -2921,6 +2921,7 @@ table td:nth-child(3) {
 }
 
 .tab.active {
+    color: #3B2C72;
     background: linear-gradient(267.9deg, #D5C2FF 3.22%, #DBCFF6 92.26%);
     box-shadow: -3px 3px 10px rgba(83, 68, 122, 0.81), 2px -3px 9px #826EB4, inset -4px 4px 4px #F3EAFE, inset 4px -4px 4px rgba(159, 138, 217, 0.3), inset 2px -2px 4px #B19AE6, inset 3px -3px 4px rgba(66, 32, 141, 0.3), inset -2px 2px 4px #FFFFFF;
 }
@@ -3390,6 +3391,12 @@ table td:nth-child(3) {
     justify-content: space-between;
 }
 
+.lk-draw-item-slider-wrapper {
+    max-width: 380px;
+    width: 100%;
+    margin: 10px auto;
+}
+
 .lk-draw-item-title {
     font-weight: bold;
     font-size: 23px;
@@ -3402,7 +3409,6 @@ table td:nth-child(3) {
 .lk-draw-item-slider {
     max-width: 380px;
     width: 100%;
-    margin: 10px auto;
 }
 
 .lk-draw-item-slide {
@@ -5044,6 +5050,10 @@ table td:nth-child(3) {
         max-width: 910px;
     }
 
+    .lk-draw-item-slider {
+        max-width: 300px;
+    }
+
     .main-charity-link {
     	right: 132px;
     }
@@ -5073,6 +5083,8 @@ table td:nth-child(3) {
 	}
 
 	.btn {
+        height: 45px;
+        padding: 14px 0;
 		font-size: 16px;
 		line-height: 19px;
 	}
@@ -5857,7 +5869,7 @@ table td:nth-child(3) {
 	}
 
     .lk-page {
-        padding-bottom: 0;
+        padding-bottom: 50px;
     }
 
     .lk-page .title {
@@ -5866,7 +5878,8 @@ table td:nth-child(3) {
 
     .profile-container {
         text-align: center;
-        margin-top: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 
     .profile-row {
@@ -5903,13 +5916,39 @@ table td:nth-child(3) {
         right: auto;
     }
 
+    .coins-col:last-child {
+        margin-bottom: 0;
+    }
+
     .coins-wrapper {
-        max-width: 200px;
+        position: relative;
+        max-width: 220px;
         width: 100%;
         margin: 0 auto 10px;
     }
 
+    .coin-count {
+        font-size: 44px;
+        text-align: right;
+        padding-right: 140px;
+    }
+
+    .coin-count::before {
+        left: 0;
+        right: 0;
+        width: 109px;
+        height: 111px;
+    }
+
     .coin-text {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        right: -150px;
+        width: 80px;
+        margin: 0 auto;
+        font-size: 12px;
+        line-height: 1;
         text-align: left;
     }
 
@@ -5935,9 +5974,246 @@ table td:nth-child(3) {
     }
 
     .lk-item,
-    .lk-prize-item,
-    .lk-draw-item-slider-wrapper {
+    .lk-prize-item {
         margin: 5px auto;
+    }
+
+    .lk-draw-item-slider-wrapper {
+        margin: 5px auto 15px;
+    }
+
+    .lk-item,
+    .lk-prize-item,
+    .lk-draw-item-slide {
+        height: 140px;
+        padding: 20px 15px 15px;
+        border-radius: 25px;
+        overflow: hidden;
+    }
+
+    .lk-draw-item-slide {
+        margin: auto;
+        padding-top: 15px;
+    }
+
+    .check-info-name,
+    .check-info-text,
+    .get-coin-text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .check-preview {
+        width: 44px;
+        height: 44px;
+    }
+
+    .get-coin {
+        font-size: 44px;
+        width: 36px;
+        height: 38px;
+    }
+
+    .lk-prize-item-title {
+        min-height: 32px;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: left;
+    }
+
+    .lk-prize-item-img {
+        height: 50px;
+        margin-bottom: 0;
+    }
+
+    .lk-prize-item-img::before {
+        top: -70px;
+        right: -175px;
+        bottom: auto;
+        width: 186px;
+        height: 188px;
+    }
+
+    .lk-prize-item-img.million-mob::before {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .lk-prize-item-img-mob {
+        max-width: 80px;
+        position: absolute !important;
+        top: -40px;
+        right: 0;
+        margin: auto;
+    }
+
+    .lk-prize-item-img-mob.million-mob {
+        max-width: 177px;
+        top: -10px;
+        left: -10px;
+        right: auto;
+    }
+
+    .lk-prize-item-img-mob-text {
+        position: absolute !important;
+        left: -15px;
+    }
+
+    .lk-prize-item-img-mob-text.million-mob {
+        top: 20px;
+    }
+
+    .lk-prize-item-title span {
+        display: block;
+        font-size: 12px;
+    }
+
+    .lk-prize-item-progress {
+        justify-content: flex-end;
+        max-width: 100px;
+        margin: 0 0 0 auto;
+        background-size: 17px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .lk-prize-item-link,
+    .lk-prize-item-text {
+        justify-content: flex-start;
+        height: 30px;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: left;
+    }
+
+    .lk-prize-item-link br {
+        display: none;
+    }
+
+    .lk-prize-item-promocode {
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        height: 30px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .lk-prize-item-promocode span {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .how-get-promocode {
+        top: 8px;
+        right: -95px;
+    }
+
+    .lk-prize-item-link-error::before {
+        right: auto;
+        left: 0;
+    }
+
+    .lk-draw-item-slider {
+        max-width: 330px;
+    }
+
+    .lk-draw-item-title {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+
+    .lk-draw-item-title br {
+        display: none;
+    }
+
+    .lk-draw-item-date {
+        position: relative;
+        font-size: 12px;
+        line-height: 14px;
+        z-index: 1;
+    }
+
+    .lk-draw-item-date span {
+        display: inline-block;
+    }
+
+    .lk-draw-item-img {
+        min-height: 60px;
+        margin-bottom: 0;
+    }
+
+    .lk-draw-item-img::before {
+        content: '';
+        position: absolute;
+        top: -40px;
+        left: 0;
+        right: -175px;
+        bottom: auto;
+        margin: auto;
+        width: 186px;
+        height: 188px;
+        background: url(../img/lk-prize-bg.png) center no-repeat;
+        background-size: contain;
+        z-index: 0;
+    }
+
+    .lk-draw-item-img.million-mob::before {
+        right: 0;
+    }
+
+    .lk-draw-item-img * {
+        z-index: 1;
+    }
+
+    .lk-draw-item-img-mob {
+        max-width: 70px;
+    }
+
+    .lk-draw-item-img-mob {
+        max-width: 70px;
+        position: absolute !important;
+        top: -5px;
+        right: 0;
+        margin: auto;
+    }
+
+    .lk-draw-item-img-mob.million-mob {
+        position: relative !important;
+        top: auto;
+        right: auto;
+        max-width: 177px;
+        margin: auto;
+    }
+
+    .lk-draw-item-img-mob-text {
+        position: absolute !important;
+        top: 0;
+        left: -15px;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .lk-draw-item-img-mob-text.million-mob {
+        position: relative !important;
+        top: auto;
+        left: auto;
+        bottom: auto;
+        max-width: 150px;
+        margin: auto;
+    }
+
+    .lk-draw-item-img::after {
+        display: none;
+    }
+
+    .lk-draw-item-status,
+    .lk-draw-item-status span {
+        position: relative;
+        font-size: 12px;
+        line-height: 14px;
     }
 
     .btn-wrapper-double,
@@ -6004,8 +6280,106 @@ table td:nth-child(3) {
         max-width: 290px;
     }
 
+    .wishes-block {
+        padding: 50px 0;
+    }
+
+    .wishes-block::before {
+        top: -30px;
+        height: 750px;
+        background: url(../img/bg-inner2-mob.png) center 0 no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .wishes-block .title,
+    .promocode-block .title {
+        font-size: 24px;
+        line-height: 27px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
     .wishes-wrapper {
         flex-direction: column;
+    }
+
+    .have-wishes {
+        margin-bottom: 30px;
+    }
+
+    .whishes-slider-wrapper {
+        max-width: 330px;
+        margin: 0 auto 20px;
+    }
+
+    .whishes-slider-wrapper::before {
+        width: 280px;
+        height: 350px;
+    }
+
+    .whishes-slider-title {
+        font-size: 24px;
+        line-height: 34px;
+        margin: 20px 0 15px;
+    }
+
+    .wishes-slide {
+        max-width: 250px;
+        max-height: 200px;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: left;
+    }
+
+    .wishes-slide.scroll-content {
+        padding-right: 15px;
+    }
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+        width: 16px;
+    }
+
+    .swiper-button-prev {
+        left: 5px;
+    }
+
+    .swiper-button-next {
+        right: 5px;
+    }
+
+    .promocode-block {
+        padding-top: 50px;
+    }
+
+    .promocode-block::before {
+        top: -50px;
+        height: 475px;
+        background: url(../img/bg-inner3-mob.png) center 0 no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .invite-info .subtitle {
+        text-align: center;
+    }
+
+    .my-promocode {
+        background: #3B2C72;
+        border-radius: 20px;
+    }
+
+    .my-promocode-title {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 5px;
+    }
+
+    .promocode-i {
+        top: 13px;
+        left: 145px;
     }
 
     .main-charity-link {
