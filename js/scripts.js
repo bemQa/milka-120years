@@ -81,9 +81,7 @@ $(document).ready(function () {
 
     $('.table-wrapper').scrollbar();
     $('.faq-wrap').scrollbar();
-    if(window.innerWidth < 1000) {
-        $('.wishes-slide').scrollbar();
-    }
+    $('.wishes-slide').scrollbar();
     $('.lk-items').scrollbar();
     $('.popups .winners-col-container').scrollbar();
 
