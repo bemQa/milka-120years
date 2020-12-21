@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('https://promo.milka.ru/fonts/MuseoSansCyrl-500.eot');
+    src: url('https://promo.milka.ru/fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+        url('https://promo.milka.ru/fonts/MuseoSansCyrl-500.woff2') format('woff2'),
+        url('https://promo.milka.ru/fonts/MuseoSansCyrl-500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('https://promo.milka.ru/fonts/MuseoSansCyrl-300.eot');
+    src: url('https://promo.milka.ru/fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+        url('https://promo.milka.ru/fonts/MuseoSansCyrl-300.woff2') format('woff2'),
+        url('https://promo.milka.ru/fonts/MuseoSansCyrl-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+body {
+    font-family: 'Museo Sans Cyrl';
+    font-weight: 300;
+    font-style: normal;
+    background-color: transparent;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: content-box;
+    height: 100%;
+    color: #3B2C72;
+}
+
+.container.uf-container.container--custom {
+    color: #3B2C72;
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: content-box;
+    padding: 0;
+}
+
+.container.uf-container.container--custom::-webkit-scrollbar {
+    width: 0;
+}
+
+.container-tutorial__text {
+    font-family: 'Museo Sans Cyrl';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+.container-tutorial__text p {
+    margin-bottom: 20px;
+}
+
+.dropzone.dropzone--custom.dz-clickable {
+    background-color: transparent;
+    border: 2px solid rgba(202, 182, 255, .5);
+    text-align: center;
+    border-radius: 0;
+}
+
+.dropzone .dz-preview.dz-image-preview {
+    margin: 16px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid #3B2C72;
+}
+
+@media screen and (max-width:768px) {
+    .dropzone .dz-preview.dz-image-preview {
+        width: 200px;
+    }
+}
+
+.dropzone .dz-preview .dz-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+}
+
+.dropzone .dz-preview .dz-remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0 !important;
+    font-weight: bold;
+    background-color: #fff;
+    border-color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    border-radius: 0;
+    z-index: 21;
+    color: #3B2C72;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.dropzone .dz-preview .dz-remove::before {
+    content: 'X';
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.dropzone .dz-preview .dz-remove:hover {
+    background: rgba(202, 182, 255, .5);
+    text-decoration: none;
+}
+
+.uf-button-wrapper.button-wrapper--custom {
+    text-align: center
+}
+
+.uf-button-submit.button-submit--custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 280px;
+    width: 100%;
+    height: 52px;
+    margin: auto;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #FF4B4D;
+    transition: all .2s linear;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 27px;
+    box-shadow: 3px 3px 0 #82150F;
+}
+
+.uf-button-submit.button-submit--custom:hover,
+.uf-button-submit.button-submit--custom:focus {
+    box-shadow: 0;
+}
+
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom {
+    margin: 20px 0;
+}
+
+.dropzone.dz-started .dz-message span,
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 280px;
+    width: 100%;
+    height: 52px;
+    margin: auto;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #7DC8F1;
+    transition: all .2s linear;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 27px;
+    box-shadow: 3px 3px 0 #1EB1FB;
+}
+
+.dropzone.dz-started .dz-message span:hover,
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom button:hover {
+    box-shadow: 0;
+}
+
+.uf-controls-wrapper {
+    margin-top: 20px;
+}
+
+.uf-controls-wrapper .form-control {
+    max-width: 280px;
+    width: 100%;
+    height: 50px;
+    padding-left: 15px !important;
+    font-family: 'Museo Sans Cyrl';
+    font-size: 16px;
+    line-height: 1;
+    color: #3B2C72;
+    background: #fff;
+    border: 1px solid rgba(59, 44, 114, 0.3);
+    border-radius: 25px;
+    transition: all .2s linear;
+    margin: 5px auto;
+    box-sizing: border-box;
+}
+
+.input-group.date {
+    /*overflow: hidden;*/
+    margin: 5px auto;
+    width: 100%;
+    min-width: 240px;
+    max-width: 280px;
+}
+
+.input-group.date input {
+    margin: 0;
+    min-width: 240px;
+}
+
+.input-group.date .input-group-addon {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid rgba(59, 44, 114, 0.3);
+    border-left: none;
+}
+
+.bootstrap-datetimepicker-widget {
+    z-index: 9999;
+    background: #fefefe;
+    color: #000;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    width: 17em;
+}
