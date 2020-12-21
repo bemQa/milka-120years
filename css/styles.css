@@ -861,6 +861,7 @@ footer {
     text-align: center;
     color: #3B2C72;
     padding: 0 0 20px;
+    z-index: 1;
 }
 
 footer::before {
@@ -970,7 +971,7 @@ footer::before {
 .title {
     font-family: 'AppetitePro';
     font-weight: bold;
-    font-size: 55px;
+    font-size: 45px;
     line-height: 64px;
     text-align: center;
 }
@@ -1039,8 +1040,8 @@ footer::before {
 .popup__title {
     font-family: 'AppetitePro';
     font-weight: bold;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 26px;
+    line-height: 34px;
     text-align: center;
     margin: 0 auto 20px;
 }
@@ -1053,10 +1054,14 @@ footer::before {
 }
 
 .popup__desc {
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 14px;
+    line-height: 17px;
     color: #3B2C72; 
     margin: 0 auto 10px;
+}
+
+.popup__error + .popup__desc {
+    margin-top: 20px;
 }
 
 .popup__desc + .btn-wrapper {
@@ -1301,9 +1306,14 @@ span.error {
     text-align: center;
     text-transform: uppercase;
     color: #3B2C72;
-    border-radius: 27px;
+    border-radius: 33px;
     z-index: 1;
     transition: all .2s linear;
+}
+
+.lk-btn {
+    height: 66px;
+    padding: 22px 0;
 }
 
 .btn1 {
@@ -2746,7 +2756,7 @@ table td:nth-child(3) {
 }
 
 .lk-page {
-    padding-bottom: 0;
+    padding-bottom: 120px;
 }
 
 .profile-container {
@@ -2757,7 +2767,8 @@ table td:nth-child(3) {
 .logout-link {
     font-size: 14px;
     line-height: 17px;
-    color: rgba(255, 75, 77, .6);
+    color: #FAE3C3;
+    margin-top: 5px;
 }
 
 .logout-link:hover {
@@ -2791,7 +2802,7 @@ table td:nth-child(3) {
     padding-left: 25px;
     font-size: 16px;
     line-height: 19px;
-    color: #3B2C72;
+    color: #fff;
 }
 
 .profile-mail {
@@ -2830,30 +2841,27 @@ table td:nth-child(3) {
     right: 0;
 }
 
-.coins-wrapper {
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
 .coin-count {
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: center;
-    width: 72px;
-    height: 64px;
-    background: url(../img/middle-heart-purple.svg) center no-repeat;
-    background-size: contain;
+    position: relative;
+    font-family: 'AppetitePro';
     font-weight: bold;
-    font-size: 29px;
+    font-size: 60px;
     line-height: 1;
-    text-align: center;
     text-transform: uppercase;
     color: #fff;
-    margin-right: 10px;
-    padding-bottom: 5px;
+}
+
+.coin-count::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50px;
+    bottom: 0;
+    margin: auto;
+    width: 145px;
+    height: 148px;
+    background: url(../img/lk-candles.png) center no-repeat;
+    background-size: contain;
 }
 
 .coin-text {
@@ -2887,17 +2895,18 @@ table td:nth-child(3) {
     align-items: center;
     justify-content: center;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    width: 240px;
-    height: 52px;
+    width: 290px;
+    height: 56px;
     margin: 0 8px;
     padding: 10px;
-    background: #CAB6FF;
-    border-radius: 50px;
+    background: linear-gradient(0deg, #644F9A, #644F9A);
+    box-shadow: -2px 2px 2px #6A5A97, -3px 3px 10px rgba(77, 56, 133, 0.81), 2px -3px 9px rgba(143, 115, 206, 0.48), inset 4px -4px 4px rgba(159, 138, 217, 0.3), inset 2px -2px 4px rgba(177, 154, 230, 0.7), inset 3px -3px 4px rgba(66, 32, 141, 0.3), inset -2px 2px 4px rgba(205, 188, 242, 0.4);
+    border-radius: 53px;
     transition: all .2s linear;
     cursor: pointer;
 }
@@ -2907,13 +2916,19 @@ table td:nth-child(3) {
     margin-left: 5px;
 }
 
+.tab:not(.active):hover {
+    color: rgba(205, 188, 242, 0.65);
+}
+
 .tab.active {
-    background: #644F9A;
+    background: linear-gradient(267.9deg, #D5C2FF 3.22%, #DBCFF6 92.26%);
+    box-shadow: -3px 3px 10px rgba(83, 68, 122, 0.81), 2px -3px 9px #826EB4, inset -4px 4px 4px #F3EAFE, inset 4px -4px 4px rgba(159, 138, 217, 0.3), inset 2px -2px 4px #B19AE6, inset 3px -3px 4px rgba(66, 32, 141, 0.3), inset -2px 2px 4px #FFFFFF;
 }
 
 .tab.disabled {
     pointer-events: none;
-    background: #ADA8A8;
+    background: #C2C2C2;
+    box-shadow: -2px 2px 7px rgba(83, 68, 122, 0.81), inset 2px -2px 4px #96949B, inset -2px 2px 4px #FFFFFF;
     color: #fff;
 }
 
@@ -2935,7 +2950,7 @@ table td:nth-child(3) {
     /*justify-content: space-between;*/
     max-width: 1200px;
     width: 100%;
-    max-height: 400px;
+    max-height: 410px;
     margin: 0 auto;
 }
 
@@ -2982,11 +2997,24 @@ table td:nth-child(3) {
     max-width: 285px;
     width: 100%;
     height: 190px;
-    margin: 5px;
+    margin: 10px 5px; 
     padding: 25px 15px 15px;
-    background: #fff;
-    border-radius: 30px;
-    box-shadow: 2px 2px 11px rgba(59, 34, 130, 0.26);
+    background: #9179C2;
+    box-shadow: 0px -6px 24px rgba(205, 188, 242, 0.1), 0px 7px 20px rgba(44, 25, 98, 0.5), inset 0px 4px 4px rgba(205, 188, 242, 0.3), inset 0px -4px 2px rgba(205, 188, 242, 0.2);
+    border-radius: 33px;
+    color: #fff;
+}
+
+.lk-prize-item {
+    max-width: 285px;
+    width: 100%;
+    height: 390px;
+    margin: 10px 5px;
+    padding: 20px 15px;
+    background: #9179C2;
+    box-shadow: 0px -6px 24px rgba(205, 188, 242, 0.1), 0px 7px 20px rgba(44, 25, 98, 0.5), inset 0px 4px 4px rgba(205, 188, 242, 0.3), inset 0px -4px 2px rgba(205, 188, 242, 0.2);
+    border-radius: 33px;
+    color: #fff;
 }
 
 .fake-item {
@@ -3015,7 +3043,7 @@ table td:nth-child(3) {
     width: 100%;
     height: 1px;
     margin: auto;
-    background: #644F9A;
+    background: #fff;
 }
 
 .lk-item-row:nth-child(2) {
@@ -3042,7 +3070,7 @@ table td:nth-child(3) {
     width: 65px;
     font-size: 16px;
     line-height: 19px;
-    color: #3B2C72;
+    color: #fff;
     margin-right: 5px;
 }
 
@@ -3056,7 +3084,7 @@ table td:nth-child(3) {
 .get-coin-text {
     font-size: 16px;
     line-height: 19px;
-    color: #3B2C72;
+    color: #fff;
 }
 
 .get-coin-wrapper {
@@ -3070,31 +3098,19 @@ table td:nth-child(3) {
     display: flex;
     -ms-align-items: center;
     align-items: center;
-    justify-content: center;
-    width: 58px;
-    height: 52px;
+    justify-content: flex-end;
+    width: 37px;
+    height: 53px;
+    background: url(../img/lk-item-candles.png) center right no-repeat;
+    background-size: contain;
+    font-family: 'AppetitePro';
     font-weight: bold;
-    font-size: 29px;
+    font-size: 65px;
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    margin: 0 5px;
-    padding-bottom: 5px;
-}
-
-.get-coin:last-child {
-    margin-right: 0;
-}
-
-.get-coin-purple {
-    background: url(../img/middle-heart-purple.svg) center no-repeat;
-    background-size: contain;
-}
-
-.get-coin-yellow {
-    background: url(../img/middle-heart-yellow.svg) center no-repeat;
-    background-size: contain;
+    padding-right: 45px;
 }
 
 .check-preview {
@@ -3102,6 +3118,7 @@ table td:nth-child(3) {
     width: 60px;
     height: 60px;
     overflow: hidden;
+    border: 1px solid #fff;
     border-radius: 50px;
 }
 
@@ -3129,7 +3146,7 @@ table td:nth-child(3) {
 
 .rejected-link {
     position: relative;
-    color: #FF4B4D;
+    color: #FAE3C3;
     padding-right: 30px;
 }
 
@@ -3218,90 +3235,489 @@ table td:nth-child(3) {
     margin: 0 30px;
 }
 
-.lk-draw {
-    max-width: 750px;
-    width: 100%;
-    min-height: 390px;
-    margin: 0 auto;
-    padding: 50px 10px 40px;
-    background: #fff;
-    box-shadow: 2px 2px 11px rgba(59, 34, 130, 0.26);
-    border-radius: 30px;
+.lk-prize-item-title {
+    min-height: 50px;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 1;
     text-align: center;
-}
-
-.lk-draw-title {
-    font-weight: bold;
-    font-size: 27px;
-    line-height: 32px;
-    text-transform: uppercase;
-    margin-bottom: 35px;
-}
-
-.lk-draw-text {
-    max-width: 395px;
-    width: 100%;
-    margin: 0 auto;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #3B2C72;
-    margin-bottom: 25px;
-}
-
-.lk-draw-text a {
-    color: #CAB6FF;
-}
-
-.lk-draw-text span {
-    font-weight: bold;
     text-transform: uppercase;
 }
 
-.draw-coins-wrapper {
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    max-width: 180px;
-    width: 100%;
-    margin: 0 auto 30px;
+.lk-prize-item-title span {
+    text-transform: none;
+    font-size: 18px;
 }
 
-.draw-coin-count {
+.lk-prize-item-img {
+    position: relative;
+    max-width: 280px;
+    width: 100%;
+    margin: 0 auto 10px;
+}
+
+.lk-prize-item-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 292px;
+    height: 396px;
+    background: url(../img/lk-prize-bg.png) center no-repeat;
+    background-size: contain;
+}
+
+.lk-prize-item-img img {
+    position: relative;
+}
+
+.lk-prize-no-success .lk-prize-item-title,
+.lk-prize-no-success .lk-prize-item-img {
+    opacity: .5;
+}
+
+.lk-prize-success .lk-prize-item-title,
+.lk-prize-success .lk-prize-item-img {
+    opacity: 1;
+}
+
+.lk-prize-item-progress {
     display: flex;
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
-    width: 72px;
-    height: 64px;
-    background: url(../img/middle-heart-yellow.svg) center no-repeat;
-    background-size: contain;
+    max-width: 150px;
+    width: 100%;
+    margin: auto;
+    background: url(../img/lk-item-candles.png) center right no-repeat;
+    background-size: 22px;
+    font-family: 'AppetitePro';
     font-weight: bold;
-    font-size: 29px;
+    font-size: 30px;
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    margin-right: 10px;
-    padding-bottom: 5px;
+    padding-right: 25px;
 }
 
-.draw-coin-text {
-    text-align: left;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
+.lk-prize-item-promocode {
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
 }
 
-.promocode-block {
+.lk-prize-item-promocode span {
+    display: block;
+    font-weight: normal;
+}
+
+.how-get-promocode {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    right: -120px;
+    width: 13px;
+    height: 13px;
+    margin: auto;
+    background: url(../img/how-mini.svg) center no-repeat;
+    background-size: contain;
+}
+
+.lk-prize-item-link {
+    position: relative;
     display: flex;
-    flex-direction: column;
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FAE3C3;
+}
+
+.lk-prize-item-link-error {
+    padding-left: 30px;
+}
+
+.lk-prize-item-link-error::before {
+    content: '!';
+    position: absolute;
+    top: 0;
+    left: -170px;
+    right: 0;
+    bottom: 0;
+    width: 23px;
+    height: 23px;
+    margin: auto;
+    border-radius: 50px;
+    background: #FF4B4D;
+    box-shadow: 0px 2px 2px rgba(133, 49, 44, 0.2);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.lk-prize-item-text {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.lk-draw-items {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lk-draw-item-title {
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.lk-draw-item-slider {
+    max-width: 380px;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.lk-draw-item-slide {
+    max-width: 285px;
+    width: 100%;
+    height: 340px;
+    margin: 10px auto;
+    padding: 20px 15px;
+    background: #9179C2;
+    box-shadow: 0px -6px 24px rgba(205, 188, 242, 0.1), 0px 7px 20px rgba(44, 25, 98, 0.5), inset 0px 4px 4px rgba(205, 188, 242, 0.3), inset 0px -4px 2px rgba(205, 188, 242, 0.2);
+    border-radius: 33px;
+    color: #fff;
+}
+
+.lk-draw-item-date {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.lk-draw-item-date span {
+    display: block;
+    font-weight: bold;
+}
+
+.lk-draw-item-img {
+    position: relative;
+    max-width: 222px;
+    width: 100%;
+    margin: 0 auto 10px;
+}
+
+.lk-draw-item-img::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
     background: #fff;
-    padding: 35px 0 45px;
-    margin-top: 50px;
+}
+
+.lk-draw-item-status {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.lk-draw-item-status span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.pseudo-label {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+}
+
+.pseudo-input {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+}
+
+.input-field-double {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 15px;
+}
+
+.input-field-double .input-field {
+    width: 48%;
+    margin: 0;
+}
+
+.pd-title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    margin: 30px auto 15px;
+}
+
+.upload-wrap {
+    display: flex;
+    align-items: center;
+    margin: 0 auto 15px;
+    position: relative;
+}
+
+.upload {
+    width: 64px;
+    margin-right: 10px;
+    border: 2px solid #644F9A;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.upload.error {
+    border: 2px solid #EB2316;
+}
+
+.upload-text {
+    width: 170px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+}
+
+.upload .dropify-wrapper,
+.upload .dropify-wrapper .dropify-preview {
+    padding: 0;
+    border: 0;
+    width: 64px;
+}
+
+.upload .dropify-wrapper.touch-fallback {
+    height: 64px !important;
+}
+
+.upload .dropify-wrapper .dropify-preview .dropify-infos {
+    display: none;
+}
+
+.upload .dropify-clear {
+    top: 0;
+    left: auto;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+}
+
+.upload .dropify-wrapper.touch-fallback .dropify-clear {
+    bottom: inherit;
+}
+
+.upload .dropify-wrapper:hover .dropify-clear {
+    background: #D01319;
+    border-radius: 4px;
+}
+
+.upload .dropify-wrapper .dropify-message p {
+    display: none;
+}
+
+.upload .dropify-wrapper .dropify-message span.file-icon::before {
+    content: '';
+    background: url(../img/camera.svg) center no-repeat #fff;
+    background-size: 22px;
+    width: 64px;
+    height: 64px;
+    display: block;
+    margin: 0;
+}
+
+.upload .dropify-wrapper.touch-fallback .dropify-message {
+    padding: 0;
+    top: 0;
+    transform: none;
+}
+
+.upload .dropify-wrapper.touch-fallback .dropify-preview .dropify-render {
+    display: initial;
+}
+
+.upload .dropify-wrapper.touch-fallback .dropify-preview .dropify-render img {
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+}
+
+
+.wishes-block {
+    position: relative;
+    min-height: 400px;
+    padding: 100px 0;
+}
+
+.wishes-block::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1024px;
+    background: url(../img/bg-inner2.png) center 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.wishes-block::after {
+    content: '';
+    position: absolute;
+    top: -150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 476px;
+    background: url(../img/lk-glow1.png) center 0 no-repeat;
+    background-size: 1205px;
+}
+
+.wishes-block .container {
+    z-index: 1;
+}
+
+.wishes-remark {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.wishes-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.have-wishes {
+    max-width: 450px;
+    width: 100%;
+}
+
+.whishes-slider-wrapper {
+    position: relative;
+    max-width: 560px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.whishes-slider-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 480px;
+    height: 133%;
+    margin: auto;
+    background: linear-gradient(180deg, rgba(124, 104, 172, 0) 11.51%, rgba(59, 44, 114, 0.6) 82.68%), #9179C2;
+    box-shadow: 0px -6px 24px rgba(205, 188, 242, 0.1), 0px 7px 20px rgba(44, 25, 98, 0.5), inset 0px 4px 4px rgba(205, 188, 242, 0.3), inset 0px -4px 2px rgba(205, 188, 242, 0.2);
+    border-radius: 33px;
+}
+
+.whishes-slider-title {
+    position: relative;
+    font-family: 'AppetitePro';
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+    margin: 15px 0 25px;
+}
+
+.wishes-slider .swiper-slide {
+    opacity: 0 !important;
+    transition: all .2s linear;
+}
+
+.wishes-slider .swiper-slide-active {
+    opacity: 1 !important;
+}
+
+.wishes-slide {
+    max-width: 390px;
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.promocode-block {
+    position: relative;
+    min-height: 400px;
+    padding: 100px 0;
+    z-index: 1;
+}
+
+.promocode-block::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 702px;
+    background: url(../img/bg-inner3.png) center 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.promocode-block::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 365px;
+    background: url(../img/lk-glow2.png) center 0 no-repeat;
+    background-size: 1192px;
 }
 
 .promocode-wrapper {
@@ -3310,35 +3726,7 @@ table td:nth-child(3) {
     justify-content: center;
     -ms-align-items: center;
     align-items: center;
-    max-width: 610px;
-    width: 100%;
-    margin: auto;
-}
-
-.promocode-wrapper::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -320px;
-    bottom: 0;
-    width: 306px;
-    height: 75px;
-    margin: auto;
-    background: url(../img/promocode-decor-left.svg) center no-repeat;
-    background-size: contain;
-}
-
-.promocode-wrapper::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -320px;
-    bottom: 0;
-    width: 306px;
-    height: 75px;
-    margin: auto;
-    background: url(../img/promocode-decor-right.svg) center no-repeat;
-    background-size: contain;
+    z-index: 1;
 }
 
 .invite-info {
@@ -3365,15 +3753,13 @@ table td:nth-child(3) {
     max-width: 274px;
     width: 100%;
     height: 108px;
-    background: #644F9A;
-    border-radius: 20px;
     padding: 12px 17px 25px;
 }
 
 .promocode-i {
     position: absolute;
-    top: 10px;
-    right: 18px;
+    top: 15px;
+    left: 180px;
     width: 15px;
     height: 15px;
     background: url(../img/how-to.svg) center no-repeat;
@@ -3385,7 +3771,6 @@ table td:nth-child(3) {
     font-size: 18px;
     line-height: 22px;
     text-transform: uppercase;
-    text-align: center;
     color: #fff;
     margin-bottom: 10px;
 }
@@ -3401,9 +3786,9 @@ table td:nth-child(3) {
     -ms-align-items: center;
     align-items: center;
     background: #fff;
-    border-radius: 20px;
+    border-radius: 30px;
     width: 140px;
-    height: 40px;
+    height: 50px;
     margin-right: 10px;
     padding: 10px 15px;
 }
@@ -3430,6 +3815,17 @@ table td:nth-child(3) {
 
 .share-btn {
     margin: 0 2px;
+}
+
+.subtitle {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.invite-info .subtitle {
+    text-align: left;
 }
 
 .lk-popup .popup__wrap {
@@ -5534,7 +5930,13 @@ table td:nth-child(3) {
         margin: 5px auto;
     }
 
-    .lk-item {
+    .lk-draw-items {
+        flex-direction: column;
+    }
+
+    .lk-item,
+    .lk-prize-item,
+    .lk-draw-item-slider-wrapper {
         margin: 5px auto;
     }
 
@@ -5602,17 +6004,8 @@ table td:nth-child(3) {
         max-width: 290px;
     }
 
-    .lk-draw {
-        padding: 30px 10px 40px;
-    }
-
-    .lk-draw-title {
-        font-size: 21px;
-        line-height: 25px;
-    }
-
-    .lk-draw-text {
-        max-width: 240px;
+    .wishes-wrapper {
+        flex-direction: column;
     }
 
     .main-charity-link {

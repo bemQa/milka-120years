@@ -384,6 +384,49 @@ $(document).ready(function () {
         $('.tab-item.' + tab).addClass('active');
     });
 
+    $('.tab-trigger[data-tab="tab-draw"]').one('click', function() {
+        if ($('.lk-draw-item-slider1').length) {
+            var wrap = $('.lk-draw-item-slider1');
+
+            var swiper = new Swiper(wrap, {
+                loop: false,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                }
+            });
+            swiper.init();
+        }
+
+        if ($('.lk-draw-item-slider2').length) {
+            var wrap = $('.lk-draw-item-slider2');
+
+            var swiper = new Swiper(wrap, {
+                slidesPerView: 1,
+                loop: false,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                }
+            });
+            swiper.init();
+        }
+
+        if ($('.lk-draw-item-slider3').length) {
+            var wrap = $('.lk-draw-item-slider3');
+
+            var swiper = new Swiper(wrap, {
+                slidesPerView: 1,
+                loop: false,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                }
+            });
+            swiper.init();
+        }
+    })
+
     function formatDate(date) {
         var dd = date.getDate();
         if (dd < 10) dd = '0' + dd;
@@ -581,6 +624,28 @@ $(document).ready(function () {
             }
         });
         swiper.init();
+    }
+
+    if ($('.wishes-slider').length) {
+        var wrap = $('.wishes-slider');
+
+        var swiper = new Swiper(wrap, {
+            effect: 'fade',
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+        swiper.init();
+    }
+
+    if($('.dropify').length) {
+        $('.dropify').dropify({
+            tpl: {
+                clearButton: '<button type="button" class="dropify-clear">X</button>'
+            }
+        });
     }
 
     // choise shop
