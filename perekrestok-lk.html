@@ -48,6 +48,15 @@
 								<div class="profile-contact profile-mail">konstantinmymail@mail.com</div>
 								<div class="profile-contact profile-phone">+7 (999) 999-99-99</div>
 							</div>
+							<div class="profile-col coins-col">
+								<div class="reg-card-block">
+									<a href="#!" class="reg-card-name link pop-op" data-popup="reg-card">Добавить карту</a>
+									<div class="reg-card-info">На эту карту будут начислены <br>баллы в случае выигрыша</div>
+									<!-- заполненное состояние -->
+									<!-- <div class="reg-card-info">Карта клуба Перекрёсток</div>
+									<div class="reg-card-name">0000 0000 0000 0000</div> -->
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="lk-tables">
@@ -693,6 +702,29 @@
 	                		<button class="btn btn1">отправить</button>
 	                	</div>
 					</form>
+                </div>
+            </div>
+		</div>
+		<div id="reg-card" class="popup">
+			<div class="popup__wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.0078 2L2.00781 18" stroke="#644F9A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    					<path d="M2.00781 2L18.0078 18" stroke="#644F9A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+                <div class="popup__inner">
+                	<div class="popup__title">Добавить карту</div>
+                    <div class="popup__desc">На эту карту будут начислены <br>баллы в случае выигрыша</div>
+                    <div class="popup__error"></div>
+                    <form class="popup-form">
+                    	<div class="input-field">
+                    		<input type="text" name="card" class="card-mask" placeholder="№ карты" required>
+                    	</div>
+                    	<div class="btn-wrapper">
+	                		<button class="btn btn1">отправить</button>
+	                	</div>
+                    </form>
                 </div>
             </div>
 		</div>
