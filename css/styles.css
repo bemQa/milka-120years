@@ -3314,16 +3314,6 @@ table td:nth-child(3) {
     text-align: center;
 }
 
-.cookies-page {
-    background: url(../img/cookies-bg.jpg) center repeat-x;
-    background-size: cover;
-}
-
-.main-cookie-h1 {
-    text-align: left;
-    padding-left: 210px;
-}
-
 .cookies-page p {
     font-size: 21px;
     line-height: 152%;
@@ -4410,6 +4400,32 @@ table td:nth-child(3) {
     display: block;
     margin-top: 20px;
     font-weight: bold;
+}
+
+.error-title {
+    font-family: 'AppetitePro';
+    font-size: 288px;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.error-desc {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.error-page .btn-wrapper {
+    margin-top: 40px;
+}
+
+.error-text {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin-top: 30px;
 }
 
 @media (max-width: 1366px) {
@@ -6193,6 +6209,15 @@ table td:nth-child(3) {
 
     .perekrestok-wrapper footer .footer-copyright {
         top: 220px;
+    }
+
+    .error-title {
+        font-size: 138px;
+    }
+
+    .error-text {
+        font-size: 21px;
+        line-height: 25px;
     }
 }
 
