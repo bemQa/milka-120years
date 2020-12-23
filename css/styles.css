@@ -876,12 +876,30 @@ footer::before {
     background-size: 100% 100%;
 }
 
+.invert-footer::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 405px;
+    margin: auto;
+    background: url(../img/footer-bg1.png) center no-repeat;
+    background-size: 100% 100%;
+}
+
 .footer-socials-wrapper {
     display: flex;
     flex-direction: column;
     -ms-align-items: flex-end;
     align-items: flex-end;
     margin-bottom: 20px;
+}
+
+.invert-footer .footer-socials-wrapper {
+    -ms-align-items: flex-start;
+    align-items: flex-start;
 }
 
 .footer-socials {
@@ -907,6 +925,10 @@ footer::before {
     font-size: 12px;
     line-height: 14px;
     text-align: right;
+}
+
+.invert-footer .footer-announce {
+    text-align: left;
 }
 
 .footer-links {
@@ -1762,7 +1784,7 @@ table td:nth-child(3) {
 }
 
 .winners-prize img {
-	max-width: 60px;
+	max-width: 50px;
 }
 
 .winners-prize-info {
@@ -1774,13 +1796,12 @@ table td:nth-child(3) {
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 17px;
-	text-transform: uppercase;
 }
 
 .winners-prize-text {
+    font-weight: 300;
 	font-size: 14px;
 	line-height: 17px;
-	text-transform: uppercase;
 }
 
 .winners-btn {
@@ -2947,13 +2968,15 @@ table td:nth-child(3) {
 }
 
 .wishes-slider .swiper-slide,
-.history-slider .swiper-slide {
+.history-slider .swiper-slide,
+.lk-prizes-slider .swiper-slide {
     opacity: 0 !important;
     transition: all .2s linear;
 }
 
 .wishes-slider .swiper-slide-active,
-.history-slider .swiper-slide-active {
+.history-slider .swiper-slide-active,
+.lk-prizes-slider .swiper-slide-active {
     opacity: 1 !important;
 }
 
@@ -3932,6 +3955,438 @@ table td:nth-child(3) {
     text-align: center;
 }
 
+.perekrestok-wrapper .menu-links {
+    max-width: 900px;
+}
+
+.perekrestok-wrapper .btn1 {
+    color: #fff;
+    background: #1F8738;
+    box-shadow: -2px 2px 2px #6A5A97, -3px 3px 10px rgba(130, 109, 183, 0.81), 2px -3px 9px rgba(23, 11, 52, 0.48), inset 2px -2px 4px #217936, inset -2px 2px 4px #3AC162, inset 3px -3px 4px #105120, inset 4px -4px 4px #136F29, inset -4px 4px 4px #FFFFFF;
+}
+
+.perekrestok-wrapper .btn1:hover {
+    color: rgba(255, 255, 255, 0.5);
+    background: #14582A;
+    box-shadow: -2px 2px 2px #6A5A97, -3px 3px 10px rgba(130, 109, 183, 0.81), 2px -3px 9px rgba(23, 11, 52, 0.48), inset 2px -2px 4px #217936, inset -2px 2px 4px #3AC162, inset 3px -3px 4px #105120, inset 4px -4px 4px #136F29;
+}
+
+.lk-tables {
+    display: flex;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 90px 0 50px;
+}
+
+.lk-checks-wrapper {
+    max-width: 570px;
+    width: 100%;
+}
+
+.lk-checks {
+    position: relative;
+    max-width: 570px;
+    width: 100%;
+    min-height: 450px;
+    margin-bottom: 45px;
+    padding: 60px 15px 30px;
+    background: #9179C2;
+    box-shadow: 0px -6px 24px rgba(205, 188, 242, 0.1), 0px 7px 20px rgba(44, 25, 98, 0.5), inset 0px 4px 4px rgba(205, 188, 242, 0.3), inset 0px -4px 2px rgba(205, 188, 242, 0.2);
+    border-radius: 33px;
+}
+
+.lk-prizes {
+    position: relative;
+    max-width: 570px;
+    width: 100%;
+    min-height: 450px;
+    padding: 60px 15px 30px;
+    background: #9179C2;
+    box-shadow: 0px -6px 24px rgba(205, 188, 242, 0.1), 0px 7px 20px rgba(44, 25, 98, 0.5), inset 0px 4px 4px rgba(205, 188, 242, 0.3), inset 0px -4px 2px rgba(205, 188, 242, 0.2);
+    border-radius: 33px;
+}
+
+.lk-title {
+    position: absolute;
+    top: -28px;
+    left: 0;
+    right: 0;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    width: 100%;
+    height: 56px;
+    margin: auto;
+    background: linear-gradient(0deg, #644F9A, #644F9A);
+    box-shadow: -2px 2px 2px #6A5A97, -3px 3px 10px rgba(77, 56, 133, 0.81), 2px -3px 9px rgba(143, 115, 206, 0.48), inset 4px -4px 4px rgba(159, 138, 217, 0.3), inset 2px -2px 4px rgba(177, 154, 230, 0.7), inset 3px -3px 4px rgba(66, 32, 141, 0.3), inset -2px 2px 4px rgba(205, 188, 242, 0.4);
+    border-radius: 53px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.lk-table {
+    max-width: 470px;
+    width: 100%;
+    margin: auto;
+}
+
+.lk-table table tbody {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.lk-table table td {
+    min-width: 100px;
+}
+
+.lk-table .check-preview {
+    width: 44px;
+    height: 44px;
+}
+
+.lk-prizes-slider {
+    max-width: 570px;
+    width: 100%;
+}
+
+.lk-prizes-slide-title {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.lk-prizes-slide-img {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+.prize3 .lk-prizes-slide-img {
+    min-height: 200px;
+}
+
+.lk-prizes-slide-name {
+    font-family: 'AppetitePro';
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+    color: #FAE3C3;
+}
+
+.lk-prizes-slide-name span {
+    display: block;
+    font-size: 21px;
+}
+
+.lk-prizes-slide-text {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lk-prizes-slide-status-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.lk-prizes-slide-status-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: calc(100% - 100px);
+    height: 1px;
+    margin: auto;
+    background: #fff;
+}
+
+.lk-prizes-slide-promocode {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.lk-prizes-slide-promocode span {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.how-get-prize-link {
+    color: #FAE3C3;
+}
+
+.tm-wrapper .winners {
+    max-width: 950px;
+}
+
+.tm-wrapper .winners-table {
+    max-width: 850px;
+}
+
+.tm-wrapper .winners-table table tbody {
+    font-size: 18px;
+}
+
+.tm-wrapper .winners-table table td {
+    min-width: 180px;
+    padding: 8px 20px 8px 0;
+}
+
+.tm-wrapper .winners-table table td:nth-child(3) {
+    min-width: 115px;
+}
+
+.perekrestok-wrapper .main-block {
+    min-height: 666px;
+}
+
+.perekrestok-wrapper .main-block::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -300px;
+    right: 0;
+    width: 917px;
+    height: 800px;
+    margin: auto;
+    background: url(../img/perekrestok/big-glow.png) center no-repeat;
+    background-size: 917px;
+    z-index: 0;
+}
+
+.perekrestok-wrapper .kv {
+    max-width: 1191px;
+    min-height: 520px;
+    background: url(../img/perekrestok/kv.png) center no-repeat;
+    background-size: contain;
+}
+
+.perekrestok-wrapper .main-block .btn-wrapper {
+    top: 400px;
+    right: 70px;
+}
+
+.perekrestok-wrapper .steps-block {
+    min-height: 700px;
+}
+
+.perekrestok-wrapper .steps-block::before {
+    top: -135px;
+    height: 1746px;
+    background: url(../img/bg5.png) center 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.perekrestok-wrapper .steps-block::after {
+    top: -115px;
+    left: auto;
+    right: 190px;
+    max-width: 336px;
+    width: 100%;
+    height: 37px;
+    background: url(../img/perekrestok/kv-date.png) center no-repeat;
+    background-size: 336px;
+}
+
+.perekrestok-wrapper .steps::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 372px;
+    height: 185px;
+    background: url(../img/perekrestok/steps-decor1.png) center no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.perekrestok-wrapper .steps::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 414px;
+    height: 151px;
+    background: url(../img/perekrestok/steps-decor2.png) center no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.perekrestok-wrapper .step1::before {
+    width: 329px;
+    background: url(../img/perekrestok/step1.png) center 0 no-repeat;
+    background-size: 329px;
+}
+
+.perekrestok-wrapper .step2::before {
+    width: 332px;
+    background: url(../img/perekrestok/step2.png) center -40px no-repeat;
+    background-size: 332px;
+}
+
+.perekrestok-wrapper .step3::before {
+    width: 359px;
+    background: url(../img/perekrestok/step3.png) center -20px no-repeat;
+    background-size: 359px;
+}
+
+.prizes-block {
+    position: relative;
+    min-height: 600px;
+    padding-top: 50px;
+}
+
+.prizes-block::before {
+    content: '';
+    position: absolute;
+    top: -125px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1121px;
+    background: url(../img/bg6.png) center 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.prizes {
+    display: flex;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.prizes::before {
+    content: '';
+    position: absolute;
+    top: -105px;
+    right: 0;
+    width: 407px;
+    height: 247px;
+    background: url(../img/perekrestok/prizes-decor1.png) center no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.prizes::after {
+    content: '';
+    position: absolute;
+    bottom: -140px;
+    right: 0;
+    width: 422px;
+    height: 324px;
+    background: url(../img/perekrestok/prizes-decor2.png) center no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.prize {
+    margin: 0 auto;
+}
+
+.prize.prize2 {
+    margin-left: 125px;
+}
+
+.prize-title {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.prize-img {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+.prize3 .prize-img {
+    min-height: 120px;
+}
+
+.prize-name {
+    font-family: 'AppetitePro';
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+    color: #FAE3C3;
+}
+
+.prize-name span {
+    display: block;
+    font-size: 21px;
+}
+
+.prize-text {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feedback-block {
+    position: relative;
+    min-height: 300px;
+}
+
+.feedback-block::before {
+    content: '';
+    position: absolute;
+    top: -125px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 706px;
+    background: url(../img/bg7.png) center 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.feedback-block .title {
+    text-align: left;
+}
+
+.feedback-block-text {
+    margin-bottom: 40px;
+}
+
+.feedback-block .btn-wrapper {
+    margin-right: 0;
+}
+
 @media (max-width: 1366px) {
 	.steps-block::before,
     footer::before {
@@ -3940,6 +4395,11 @@ table td:nth-child(3) {
 
     .main-wishes-info {
         max-width: 450px;
+    }
+
+    .perekrestok-wrapper .steps-block::after {
+        left: 0;
+        right: -800px;
     }
 }
 
@@ -3995,6 +4455,17 @@ table td:nth-child(3) {
     .main-prizes-slide {
         max-width: 300px;
         height: 450px;
+    }
+
+    .lk-checks-wrapper,
+    .lk-prizes,
+    .lk-prizes-slider {
+        max-width: 480px;
+    }
+
+    .perekrestok-wrapper .steps-block::after {
+        left: auto;
+        right: 15px;
     }
 }
 
@@ -4293,14 +4764,17 @@ table td:nth-child(3) {
 	}
 
 	table th,
-	table td {
+	table td,
+    .tm-wrapper .winners-table table th,
+    .tm-wrapper .winners-table table td {
 		font-size: 16px;
 		line-height: 19px;
 		text-align: center;
 		padding: 10px 0;
 	}
 
-	table td {
+	table td,
+    .tm-wrapper .winners-table table td {
 		min-width: auto;
 		vertical-align: bottom;
 	}
@@ -4309,6 +4783,10 @@ table td:nth-child(3) {
 	.prize-td {
 		display: table-cell;
 	}
+
+    .prize-td {
+        max-width: 122px;
+    }
 
 	.winners-prize {
 		margin: 0 auto 5px;
@@ -5418,10 +5896,286 @@ table td:nth-child(3) {
         font-size: 14px;
         line-height: 17px;
     }
+
+    .perekrestok-wrapper {
+        max-width: 100%;
+        min-height: 200px;
+    }
+
+    .lk-checks,
+    .lk-prizes {
+        padding: 35px 15px 25px;
+        min-height: 300px;
+    }
+
+    .lk-checks {
+        margin-bottom: 30px;
+    }
+
+    .lk-checks-wrapper {
+        margin-bottom: 50px;
+    }
+
+    .lk-title {
+        top: -16px;
+        max-width: 106px;
+        height: 32px;
+        font-size: 12px;
+    }
+
+    .lk-tables {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .lk-table table th, 
+    .lk-table table td {
+        text-align: left;
+    }
+
+    .lk-table table th {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .lk-table table td {
+        min-width: 60px;
+        vertical-align: middle;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .lk-prizes-slide-title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .lk-prizes-slide-title br {
+        display: none;
+    }
+
+    .lk-prizes-slide-name {
+        font-size: 20px;
+    }
+
+    .lk-prizes-slide-name span {
+        font-size: 16px;
+    }
+
+    .lk-prizes-slide-text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .prize3 .lk-prizes-slide-img {
+        max-width: 270px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .date-filter {
+        max-width: 300px;
+    }
+
+    .perekrestok-wrapper .main-block {
+        min-height: 375px;
+    }
+
+    .perekrestok-wrapper .main-block::after {
+        left: 0;
+        bottom: -40px;
+        max-width: 100%;
+        height: 250px;
+        background: url(../img/main-glow2.png) center no-repeat;
+        background-size: 375px;
+    }
+
+    .perekrestok-wrapper .kv {
+        top: 0;
+        min-height: 290px;
+        background: url(../img/perekrestok/kv-mob.png) center no-repeat;
+        background-size: 301px;
+    }
+
+    .perekrestok-wrapper .steps-block {
+        padding-top: 120px;
+    }
+
+    .perekrestok-wrapper .steps-block::before {
+        top: -35px;
+        height: 1526px;
+        background: url(../img/bg5-mob.png) center 0 no-repeat;
+        background-size: 100% 100%; 
+    }
+
+    .perekrestok-wrapper .steps-block::after {
+        top: 0;
+        left: 0;
+        right: 0;
+        max-width: 347px;
+        height: 98px;
+        background: url(../img/perekrestok/kv-text.png) center no-repeat;
+        background-size: contain;
+    }
+
+    .perekrestok-wrapper .steps {
+        padding-top: 50px;
+    }
+
+    .perekrestok-wrapper .step {
+        margin: 20px auto;
+    }
+
+    .perekrestok-wrapper .step::before {
+        width: 161px;
+        background-size: 161px;
+        background-position: center;
+    }
+
+    .perekrestok-wrapper .step2 .step-num {
+        top: -30px;
+    }
+
+    .prizes-block {
+        min-height: 700px;
+    }
+
+    .prizes-block::before {
+        top: -35px;
+        height: 1081px;
+        background: url(../img/bg6-mob.png) center 0 no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .prizes {
+        flex-direction: column;
+    }
+
+    .prizes::before {
+        top: -80px;
+        max-width: 340px;
+    }
+
+    .prizes::after {
+        bottom: -190px;
+        width: 390px;
+        transform: scale(-1, 1);
+    }
+
+    .prizes .prize {
+        position: relative;
+        width: 100%;
+    }
+
+    .prize.prize1 {
+        display: flex;
+        flex-direction: column;
+        -ms-align-items: flex-start;
+        align-items: flex-start;
+        margin: 40px 0 60px;
+        padding-right: 80px;
+    }
+
+    .prize.prize2 {
+        margin-left: auto;
+        padding-left: 160px;
+    }
+
+    .prizes .prize1 .prize-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 80px;
+        margin: auto;
+    }
+
+    .prizes .prize2 .prize-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        width: 150px;
+        transform: rotate(5deg);
+    }
+
+    .prizes .prize3 {
+        order: -1;
+    }
+
+    .prize-title {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 15px;
+    }
+
+    .prize1 .prize-title,
+    .prize2 .prize-title {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .prize-title br {
+        display: none;
+    }
+
+    .prize-name {
+        font-size: 21px;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .prize-text {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: left;
+    }
+
+    .feedback-block {
+        padding-top: 50px;
+    }
+
+    .feedback-block::before {
+        top: -35px;
+        height: 590px;
+        background: url(../img/bg7-mob.png) center 0 no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .feedback-block .title {
+        text-align: center;
+    }
+
+    .feedback-block-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .feedback-block .btn-wrapper {
+        margin-right: auto;
+    }
+
+    .invert-footer::before {
+        height: 490px;
+        background: url(../img/footer-bg-mob.png) center no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .invert-footer .footer-announce {
+        text-align: center;
+    }
+
+    .invert-footer .footer-copyright {
+        top: 220px;
+    }
 }
 
 @media (max-width: 375px) {
-	
+	.prizes-block::before,
+    .feedback-block::before {
+        background-size: cover;
+    }
 }
 
 @media (max-width: 360px) {
@@ -5454,5 +6208,9 @@ table td:nth-child(3) {
 
     .anniversary-text {
         background-size: 290px;
+    }
+
+    .lk-table table td {
+        font-size: 12px;
     }
 }

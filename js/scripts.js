@@ -516,6 +516,20 @@ $(document).ready(function () {
         });
         swiper.init();
     }
+
+    if ($('.lk-prizes-slider').length) {
+        var wrap = $('.lk-prizes-slider');
+
+        var swiper = new Swiper(wrap, {
+            effect: 'fade',
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+        swiper.init();
+    }
 });
 
 $(window).on('load', function() {
