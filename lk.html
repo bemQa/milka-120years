@@ -1215,6 +1215,90 @@
                 </div>
             </div>
 		</div>
+		<div id="get-prize-address" class="popup">
+			<div class="popup__wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.0078 2L2.00781 18" stroke="#644F9A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    					<path d="M2.00781 2L18.0078 18" stroke="#644F9A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+                <div class="popup__inner">
+                	<div class="popup__title">Адрес</div>
+                	<div class="popup__desc">Укажите почтовый адрес, <br>для отправки приза:</div>
+                	<div class="popup__error"></div>
+                    <form class="popup-form">
+                    	<div class="input-field">
+                    		<div class="select">
+								<select name="region" class="select-search" data-placeholder="Регион" required>
+									<option value=""></option>
+									<option value="1">Приз 1</option>
+									<option value="2">Приз 2</option>
+									<option value="3">приз 3</option>
+								</select>
+							</div>
+                    	</div>
+                    	<div class="input-field">
+                    		<div class="select">
+								<select name="city" class="select-search" data-placeholder="Населенный пункт" required>
+									<option value=""></option>
+									<option value="1">Приз 1</option>
+									<option value="2">Приз 2</option>
+									<option value="3">приз 3</option>
+								</select>
+							</div>
+                    	</div>
+						<div class="input-field">
+                    		<div class="select">
+								<select name="street" class="select-search" data-placeholder="Улица" required>
+									<option value=""></option>
+									<option value="1">Приз 1</option>
+									<option value="2">Приз 2</option>
+									<option value="3">приз 3</option>
+								</select>
+							</div>
+                    	</div>
+                    	<div class="input-field">
+                    		<div class="select">
+								<select name="house" class="select-search" data-placeholder="Дом" required>
+									<option value=""></option>
+									<option value="1">Приз 1</option>
+									<option value="2">Приз 2</option>
+									<option value="3">приз 3</option>
+								</select>
+							</div>
+                    	</div>
+                    	<div class="input-field mb30">
+                    		<input type="text" name="flat" placeholder="Квартира" required>
+                    	</div>
+                    	<div class="btn-wrap">
+	                		<button class="btn btn1">Подтвердить</button>
+	                	</div>
+	                	<!-- Ссылка для попапа повторного ввода адреса -->
+	                	<!-- <a href="#!" class="clear-form link">Указать другой адрес</a> -->
+					</form>
+                </div>
+            </div>
+		</div>
+		<div id="get-prize-address-confirm" class="popup">
+			<div class="popup__wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.0078 2L2.00781 18" stroke="#644F9A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    					<path d="M2.00781 2L18.0078 18" stroke="#644F9A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+                <div class="popup__inner">
+                	<div class="popup__title">Ваш подарок отправлен</div>
+                	<div class="popup__desc mb30">по адресу: <br>
+                		ул. Строителей, д. 25, кв. 66 г. Санкт-Петербург, Ленинградская обл. 234567
+                	</div>
+                    <div class="btn-wrap">
+                		<a href="#!" class="btn btn1">Спасибо</a>
+                	</div>
+                </div>
+            </div>
+		</div>
 	</div>
 
 	<script src="libs/jquery-3.5.1.min.js"></script>
