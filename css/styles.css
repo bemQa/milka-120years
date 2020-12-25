@@ -884,6 +884,10 @@ footer::before {
     background-size: 100% 100%;
 }
 
+.perekrestok-wrapper footer::before {
+    height: 405px;
+}
+
 .invert-footer::before {
     content: '';
     position: absolute;
@@ -1080,6 +1084,7 @@ footer::before {
     line-height: 1;
     min-height: 13px;
     color: #FF4B4D;
+    margin-bottom: 5px;
 }
 
 .popup__desc {
@@ -1711,6 +1716,7 @@ span.error {
     position: relative;
 	max-width: 800px;
     width: 100%;
+    min-height: 360px;
     margin: auto;
     padding: 30px 40px 30px;
     background: #9179C2;
@@ -3404,7 +3410,7 @@ table td:nth-child(3) {
 
 .steps-block {
     position: relative;
-    min-height: 1500px;
+    min-height: 1550px;
 }
 
 .big-glow1 {
@@ -3700,6 +3706,10 @@ table td:nth-child(3) {
     justify-content: space-between;
 }
 
+.main-wishes-info {
+    max-width: 600px;
+}
+
 .main-wishes-info .title {
     text-align: left;
     white-space: nowrap;
@@ -3812,7 +3822,7 @@ table td:nth-child(3) {
     width: 787px;
     height: 1247px;
     background: url(../img/mobile-bg.png) center 0 no-repeat;
-    background-size: 787px;
+    background-size: contain;
 }
 
 .main-wishes-slide {
