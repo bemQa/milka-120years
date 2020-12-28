@@ -2982,14 +2982,14 @@ table td:nth-child(3) {
 }
 
 .wishes-slider .swiper-slide,
-.history-slider .swiper-slide,
+/*.history-slider .swiper-slide,*/
 .lk-prizes-slider .swiper-slide {
     opacity: 0 !important;
     transition: all .2s linear;
 }
 
 .wishes-slider .swiper-slide-active,
-.history-slider .swiper-slide-active,
+/*.history-slider .swiper-slide-active,*/
 .lk-prizes-slider .swiper-slide-active {
     opacity: 1 !important;
 }

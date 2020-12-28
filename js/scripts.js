@@ -138,12 +138,15 @@ $(document).ready(function () {
     checkValidate();
 
     if($('.select').length > 1) {
-        var parent = $('select').parents('.select');
-        $('select').each(function() {
+        var parent = $('select').not('.select-search').parents('.select');
+        $('select').not('.select-search').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownParent: parent
+        });
+        $('.select-search').each(function() {
             let $this = $(this);
             let parent = $(this).parents('.select');
             $this.select2({
-                minimumResultsForSearch: Infinity,
                 dropdownParent: parent
             });
         });
@@ -507,7 +510,7 @@ $(document).ready(function () {
         var wrap = $('.history-slider');
 
         var swiper = new Swiper(wrap, {
-            effect: 'fade',
+            // effect: 'fade',
             loop: true,
             navigation: {
                 nextEl: '.swiper-button-next',
