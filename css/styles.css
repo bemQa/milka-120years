@@ -1879,7 +1879,7 @@ table td:nth-child(3) {
     bottom: 0;
     margin: auto;
     width: 100%;
-    max-width: 370px;
+    max-width: 360px;
     height: 2px;
     background: #fff;
 }
@@ -1892,7 +1892,7 @@ table td:nth-child(3) {
     bottom: 0;
     margin: auto;
     width: 100%;
-    max-width: 370px;
+    max-width: 360px;
     height: 2px;
     background: #fff;
 }
@@ -2260,7 +2260,7 @@ table td:nth-child(3) {
     /*justify-content: space-between;*/
     max-width: 1200px;
     width: 100%;
-    max-height: 410px;
+    max-height: 425px;
     margin: 0 auto;
 }
 
@@ -2310,7 +2310,7 @@ table td:nth-child(3) {
     margin: 10px 5px; 
     padding: 25px 15px 15px;
     background: #9179C2;
-    box-shadow: 0px -6px 24px rgba(205, 188, 242, 0.1), 0px 7px 20px rgba(44, 25, 98, 0.5), inset 0px 4px 4px rgba(205, 188, 242, 0.3), inset 0px -4px 2px rgba(205, 188, 242, 0.2);
+    box-shadow: 0px -6px 10px rgba(205, 188, 242, 0.1), 0px 7px 10px rgba(44, 25, 98, 0.5), inset 0px 4px 4px rgba(205, 188, 242, 0.3), inset 0px -4px 2px rgba(205, 188, 242, 0.2);
     border-radius: 33px;
     color: #fff;
 }
@@ -2318,7 +2318,7 @@ table td:nth-child(3) {
 .lk-prize-item {
     max-width: 285px;
     width: 100%;
-    height: 390px;
+    height: 395px;
     margin: 10px 5px;
     padding: 20px 15px;
     background: #9179C2;
@@ -2727,7 +2727,7 @@ table td:nth-child(3) {
     margin: 10px auto;
     padding: 20px 15px;
     background: #9179C2;
-    box-shadow: 0px -6px 24px rgba(205, 188, 242, 0.1), 0px 7px 20px rgba(44, 25, 98, 0.5), inset 0px 4px 4px rgba(205, 188, 242, 0.3), inset 0px -4px 2px rgba(205, 188, 242, 0.2);
+    box-shadow: 0px -6px 14px rgba(205, 188, 242, 0.1), 0px 7px 10px rgba(44, 25, 98, 0.5), inset 0px 4px 4px rgba(205, 188, 242, 0.3), inset 0px -4px 2px rgba(205, 188, 242, 0.2);
     border-radius: 33px;
     color: #fff;
 }
@@ -3398,7 +3398,7 @@ table td:nth-child(3) {
     height: 100%;
     min-height: 766px;
     margin: auto;
-    background: url(../img/kv.png) center no-repeat;
+    background: url(../img/kv.png) center 45% no-repeat;
     background-size: contain;
 }
 
@@ -3591,7 +3591,7 @@ table td:nth-child(3) {
     margin: 10px auto;
     padding: 30px 15px;
     background: linear-gradient(180deg, rgba(59, 44, 114, 0.7) 10.34%, rgba(124, 104, 172, 0) 98.84%), rgba(125, 104, 172, 0.7);
-    box-shadow: 0px 20px 20px rgba(44, 25, 98, 0.5), inset 0px -4px 4px rgba(205, 188, 242, 0.1);
+    box-shadow: 0px 10px 10px rgba(44, 25, 98, 0.5), inset 0px -4px 4px rgba(205, 188, 242, 0.1);
     border-radius: 66px;
     color: #fff;
 }
@@ -4495,6 +4495,12 @@ table td:nth-child(3) {
     margin: 2px 0;
 }
 
+@media (max-width: 1440px) {
+    .main-block::after {
+        bottom: -100px;
+    }
+}
+
 @media (max-width: 1366px) {
 	.steps-block::before,
     footer::before {
@@ -4574,6 +4580,15 @@ table td:nth-child(3) {
     .perekrestok-wrapper .steps-block::after {
         left: auto;
         right: 15px;
+    }
+
+    .kv {
+        background-position: center;
+    }
+
+    .products-group-title::before,
+    .products-group-title::after {
+        max-width: 265px;
     }
 }
 
@@ -6333,5 +6348,10 @@ table td:nth-child(3) {
 
     .lk-table table td {
         font-size: 12px;
+    }
+
+    .products-group-title::before,
+    .products-group-title::after {
+        max-width: 25px;
     }
 }
