@@ -1849,7 +1849,9 @@ table td:nth-child(3) {
 }
 
 .swiper-button-next::after, 
-.swiper-button-prev::after {
+.swiper-button-prev::after,
+.products-group .swiper-button-prev.swiper-button-disabled,
+.products-group .swiper-button-next.swiper-button-disabled {
     display: none;
 }
 
@@ -4495,7 +4497,7 @@ table td:nth-child(3) {
     margin: 2px 0;
 }
 
-.feedback-select .select2-container:nth-child(3) {
+.feedback-select .select2-container + .select2-container {
     top: 50px !important;
     left: 0 !important;
 }
@@ -5176,6 +5178,10 @@ table td:nth-child(3) {
         overflow: hidden;
     }
 
+    .lk-prize-item {
+        height: 150px;
+    }
+
     .lk-draw-item-slide {
         margin: auto;
         padding-top: 15px;
@@ -5207,7 +5213,7 @@ table td:nth-child(3) {
     }
 
     .lk-prize-item-img {
-        height: 50px;
+        height: 60px;
         margin-bottom: 0;
     }
 
