@@ -3808,7 +3808,7 @@ table td:nth-child(3) {
 
 .main-wishes-slider-wrapper {
     position: relative;
-    max-width: 560px;
+    max-width: 580px;
     width: 100%;
     min-height: 800px;
     padding-top: 480px;
@@ -3818,7 +3818,7 @@ table td:nth-child(3) {
     content: '';
     position: absolute;
     top: 60px;
-    left: -10px;
+    left: 0;
     right: 0;
     margin: auto;
     width: 787px;
@@ -6315,6 +6315,10 @@ table td:nth-child(3) {
     .error-text {
         font-size: 21px;
         line-height: 25px;
+    }
+
+    .perekrestok-wrapper .step-title {
+        font-size: 19px;
     }
 }
 

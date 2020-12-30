@@ -444,6 +444,8 @@ $(document).ready(function () {
         var swiper = new Swiper(wrap, {
             effect: 'fade',
             loop: false,
+            autoplay: true,
+            autoplaySpeed: 3000,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev'
@@ -466,6 +468,8 @@ $(document).ready(function () {
         var swiper = new Swiper(wrap, {
             slidesPerView: 1,
             loop: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true
@@ -498,6 +502,8 @@ $(document).ready(function () {
         var swiper = new Swiper(wrap, {
             slidesPerView: 1,
             loop: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true
