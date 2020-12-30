@@ -138,10 +138,18 @@ $(document).ready(function () {
     checkValidate();
 
     if($('.select').length > 1) {
-        var parent = $('select').not('.select-search').parents('.select');
-        $('select').not('.select-search').select2({
-            minimumResultsForSearch: Infinity,
-            dropdownParent: parent
+        // var parent = $('select').not('.select-search').parents('.select');
+        // $('select').not('.select-search').select2({
+        //     minimumResultsForSearch: Infinity,
+        //     dropdownParent: parent
+        // });
+        $('select').each(function() {
+            let $this = $(this).not('.select-search');
+            let parent = $(this).not('.select-search').parents('.select');
+            $this.select2({
+                minimumResultsForSearch: Infinity,
+                dropdownParent: parent
+            });
         });
         $('.select-search').each(function() {
             let $this = $(this);
