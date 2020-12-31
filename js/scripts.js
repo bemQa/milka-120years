@@ -502,8 +502,8 @@ $(document).ready(function () {
         var swiper = new Swiper(wrap, {
             slidesPerView: 1,
             loop: true,
-            autoplay: true,
-            autoplaySpeed: 5000,
+            // autoplay: true,
+            // autoplaySpeed: 5000,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true

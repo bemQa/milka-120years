@@ -4506,6 +4506,11 @@ table td:nth-child(3) {
     .main-block::after {
         bottom: -100px;
     }
+
+    .perekrestok-wrapper .steps-block::after {
+        left: 0;
+        right: -900px;
+    }
 }
 
 @media (max-width: 1366px) {
@@ -5833,7 +5838,7 @@ table td:nth-child(3) {
     }
 
     .main-prizes-slide-img-mob {
-        max-width: 90px;
+        max-width: 100px;
         position: absolute !important;
         top: -5px;
         right: 0;
@@ -6320,6 +6325,10 @@ table td:nth-child(3) {
     .perekrestok-wrapper .step-title {
         font-size: 19px;
     }
+
+    .big-glow1 {
+        opacity: .3;
+    }
 }
 
 @media (max-width: 375px) {
@@ -6347,6 +6356,10 @@ table td:nth-child(3) {
 
     .step-title {
         font-size: 19px;
+    }
+
+    .perekrestok-wrapper .step-title {
+        font-size: 18px;
     }
 
     .main-wish-step-text {
