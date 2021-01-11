@@ -2906,6 +2906,7 @@ table td:nth-child(3) {
 }
 
 .pka-wrapper .wishes-block {
+    min-height: 530px;
     padding: 70px 0;
 }
 
@@ -4688,7 +4689,7 @@ table td:nth-child(3) {
 
 .wishes-block .bortich {
     position: absolute;
-    top: 35px;
+    bottom: 35px;
     right: -800px;
     left: 0;
     width: 638px;
