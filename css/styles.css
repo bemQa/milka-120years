@@ -2905,6 +2905,10 @@ table td:nth-child(3) {
     padding: 100px 0;
 }
 
+.pka-wrapper .wishes-block {
+    padding: 70px 0;
+}
+
 .wishes-block::before {
     content: '';
     position: absolute;
@@ -2953,11 +2957,25 @@ table td:nth-child(3) {
     width: 100%;
 }
 
+.pka-wrapper .have-wishes {
+    max-width: 600px;
+}
+
+.pka-wrapper .have-wishes .title {
+    font-size: 40px;
+    line-height: 50px;
+}
+
 .whishes-slider-wrapper {
     position: relative;
     max-width: 560px;
     width: 100%;
     margin-bottom: 40px;
+}
+
+.pka-wrapper .have-wishes .whishes-slider-wrapper {
+    margin: 40px auto;
+    padding-top: 10px;
 }
 
 .whishes-slider-wrapper::before {
@@ -3147,6 +3165,10 @@ table td:nth-child(3) {
     line-height: 19px;
     text-align: center;
     margin: 20px 0;
+}
+
+.subtitle a {
+    color: #FAE3C3;
 }
 
 .invite-info .subtitle {
@@ -3814,6 +3836,10 @@ table td:nth-child(3) {
     padding-top: 480px;
 }
 
+.pka-wrapper .main-wishes-slider-wrapper {
+    padding-top: 420px;
+}
+
 .main-wishes-slider-wrapper::before {
     content: '';
     position: absolute;
@@ -3825,6 +3851,10 @@ table td:nth-child(3) {
     height: 1247px;
     background: url(../img/mobile-bg.png) center 0 no-repeat;
     background-size: contain;
+}
+
+.pka-wrapper .main-wishes-slider-wrapper::before {
+    top: 0;
 }
 
 .main-wishes-slide {
@@ -3979,6 +4009,18 @@ table td:nth-child(3) {
     color: rgba(255, 255, 255, 0.5);
     background: #14582A;
     box-shadow: -2px 2px 2px #6A5A97, -3px 3px 10px rgba(130, 109, 183, 0.81), 2px -3px 9px rgba(23, 11, 52, 0.48), inset 2px -2px 4px #217936, inset -2px 2px 4px #3AC162, inset 3px -3px 4px #105120, inset 4px -4px 4px #136F29;
+}
+
+.pka-wrapper .btn1 {
+    color: #fff;
+    background: #EB2316;
+    box-shadow: -2px 2px 2px #6A5A97, -3px 3px 10px rgba(130, 109, 183, 0.81), 2px -3px 9px rgba(23, 11, 52, 0.48), inset 2px -2px 4px rgba(255, 45, 45, 0.33), inset -2px 2px 4px #FD7D7D, inset 3px -3px 4px rgba(181, 6, 6, 0.3), inset 4px -4px 4px #AF1B1B, inset -4px 4px 4px #FEEAEA;
+}
+
+.pka-wrapper .btn1:hover {
+    color: rgba(255, 255, 255, 0.5);
+    background: #9E000C;
+    box-shadow: -2px 2px 2px #6A5A97, -3px 3px 10px rgba(130, 109, 183, 0.81), 2px -3px 9px rgba(23, 11, 52, 0.48), inset 2px -2px 4px rgba(255, 45, 45, 0.33), inset -2px 2px 4px #FD7D7D, inset 3px -3px 4px rgba(181, 6, 6, 0.3), inset 4px -4px 4px #AF1B1B;
 }
 
 .lk-tables {
@@ -4155,6 +4197,10 @@ table td:nth-child(3) {
     max-width: 950px;
 }
 
+.tm-wrapper .winners + .btn-wrapper {
+    margin-top: 40px;
+}
+
 .tm-wrapper .winners-table {
     max-width: 850px;
 }
@@ -4190,6 +4236,10 @@ table td:nth-child(3) {
     z-index: 0;
 }
 
+.pka-wrapper .main-block::after {
+    display: none;
+}
+
 .perekrestok-wrapper .kv {
     max-width: 1191px;
     min-height: 520px;
@@ -4197,9 +4247,22 @@ table td:nth-child(3) {
     background-size: contain;
 }
 
+.pka-wrapper .kv {
+    max-width: 1362px;
+    min-height: 660px;
+    background: url(../img/5ka/kv.png) center 44px no-repeat;
+    background-size: contain;
+}
+
 .perekrestok-wrapper .main-block .btn-wrapper {
     top: 400px;
     right: 70px;
+}
+
+.pka-wrapper .main-block .btn-wrapper {
+    top: 430px;
+    left: 190px;
+    right: auto;
 }
 
 .perekrestok-wrapper .steps-block {
@@ -4213,6 +4276,23 @@ table td:nth-child(3) {
     background-size: 100% 100%;
 }
 
+.pka-wrapper .steps-block::before {
+    height: 1783px;
+    background: url(../img/5ka/bg2.png) center 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.pka-wrapper .bg2-top {
+    position: absolute;
+    top: 500px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 542px;
+    background: url(../img/5ka/bg2-top.png) center 0 no-repeat;
+    background-size: 100% 100%;
+}
+
 .perekrestok-wrapper .steps-block::after {
     top: -115px;
     left: auto;
@@ -4222,6 +4302,15 @@ table td:nth-child(3) {
     height: 37px;
     background: url(../img/perekrestok/kv-date.png) center no-repeat;
     background-size: 336px;
+}
+
+.pka-wrapper .steps-block::after {
+    top: -115px;
+    right: 190px;
+    max-width: 333px;
+    height: 31px;
+    background: url(../img/5ka/kv-date.png) center no-repeat;
+    background-size: 333px;
 }
 
 .perekrestok-wrapper .steps::before {
@@ -4254,15 +4343,30 @@ table td:nth-child(3) {
     background-size: 329px;
 }
 
+.pka-wrapper .step1::before {
+    background: url(../img/5ka/step1.png) center 0 no-repeat;
+    background-size: 329px;
+}
+
 .perekrestok-wrapper .step2::before {
     width: 332px;
     background: url(../img/perekrestok/step2.png) center -40px no-repeat;
     background-size: 332px;
 }
 
+.pka-wrapper .step2::before {
+    background: url(../img/5ka/step2.png) center 0 no-repeat;
+    background-size: 332px;
+}
+
 .perekrestok-wrapper .step3::before {
     width: 359px;
     background: url(../img/perekrestok/step3.png) center -20px no-repeat;
+    background-size: 359px;
+}
+
+.pka-wrapper .step3::before {
+    background: url(../img/5ka/step3.png) center 0 no-repeat;
     background-size: 359px;
 }
 
@@ -4296,6 +4400,11 @@ table td:nth-child(3) {
     background: url(../img/main-glow2.png) center no-repeat;
     background-size: cover;
     z-index: 0;
+}
+
+.pka-wrapper .prizes-block::before,
+.pka-wrapper .prizes-block::after {
+    display: none;
 }
 
 .prizes {
@@ -4360,6 +4469,10 @@ table td:nth-child(3) {
     min-height: 120px;
 }
 
+.pka-wrapper .prize-img {
+    min-height: 161px;
+}
+
 .prize-name {
     font-family: 'AppetitePro';
     font-size: 30px;
@@ -4368,9 +4481,18 @@ table td:nth-child(3) {
     color: #FAE3C3;
 }
 
+.pka-wrapper .prize-name {
+    margin-bottom: 10px;
+}
+
 .prize-name span {
     display: block;
     font-size: 21px;
+}
+
+.pka-wrapper .prize-name span {
+    display: inline-block;
+    font-size: 49px;
 }
 
 .prize-text {
@@ -4385,6 +4507,10 @@ table td:nth-child(3) {
     min-height: 300px;
 }
 
+.pka-wrapper .feedback-block {
+    z-index: 1;
+}
+
 .feedback-block::before {
     content: '';
     position: absolute;
@@ -4396,6 +4522,10 @@ table td:nth-child(3) {
     height: 706px;
     background: url(../img/bg7.png) center 0 no-repeat;
     background-size: 100% 100%;
+}
+
+.pka-wrapper .feedback-block::before {
+    top: -180px;
 }
 
 .feedback-block .title {
@@ -4475,6 +4605,13 @@ table td:nth-child(3) {
     background-size: contain;
 }
 
+.pka-wrapper .reg-card-block::before {
+    width: 86px;
+    height: 55px;
+    background: url(../img/5ka/card.png) center no-repeat;
+    background-size: contain;
+}
+
 .reg-card-name {
     font-weight: bold;
     font-size: 16px;
@@ -4502,6 +4639,90 @@ table td:nth-child(3) {
     left: 0 !important;
 }
 
+.lk-prizes-5ka {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 300px;
+}
+
+.lk-prize-item-5ka {
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.lk-prize-item-5ka-info {
+    margin-left: 35px;
+}
+
+.lk-prize-item-5ka-name {
+    font-family: 'AppetitePro';
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: #FAE3C3;
+}
+
+.lk-prize-item-5ka-text {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.lk-prize-separate {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    height: 1px;
+    background: #fff;
+}
+
+.lk-prize-item-5ka-link {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FAE3C3;
+    margin-left: 35px;
+}
+
+.wishes-block .bortich {
+    position: absolute;
+    top: 35px;
+    right: -800px;
+    left: 0;
+    width: 638px;
+    height: 769px;
+    margin: auto;
+    background: url(../img/5ka/bortich.png) center no-repeat;
+    background-size: contain;
+}
+
+.main-block .bortich {
+    position: absolute;
+    top: 50px;
+    right: -640px;
+    left: 0;
+    width: 564px;
+    height: 679px;
+    margin: auto;
+    background: url(../img/5ka/bortich.png) center no-repeat;
+    background-size: contain;
+}
+
+.main-block .kv-text {
+    position: absolute;
+    top: 590px;
+    left: -800px;
+    right: 0;
+    width: 642px;
+    height: 83px;
+    margin: auto;
+    background: url(../img/5ka/kv-text.png) center no-repeat;
+    background-size: 642px;
+    z-index: 1;
+}
+
 @media (max-width: 1440px) {
     .main-block::after {
         bottom: -100px;
@@ -4510,6 +4731,11 @@ table td:nth-child(3) {
     .perekrestok-wrapper .steps-block::after {
         left: 0;
         right: -900px;
+    }
+
+    .main-block .kv-text {
+        top: 580px;
+        left: -615px;
     }
 }
 
@@ -4601,6 +4827,27 @@ table td:nth-child(3) {
     .products-group-title::before,
     .products-group-title::after {
         max-width: 265px;
+    }
+
+    .lk-prize-item-5ka-name {
+        font-size: 25px;
+    }
+
+    .pka-wrapper .kv {
+        background-position: center 100px;
+    }
+
+    .pka-wrapper .main-block .btn-wrapper {
+        top: 380px;
+        left: 150px;
+    }
+
+    .main-block .kv-text {
+        top: 580px;
+        left: -465px;
+        width: 541px;
+        height: 75px;
+        background-size: 541px;
     }
 }
 
@@ -5428,7 +5675,8 @@ table td:nth-child(3) {
         margin: 0 0 25px;
     }
 
-    .wishes-block {
+    .wishes-block,
+    .pka-wrapper .wishes-block {
         padding: 50px 0;
     }
 
@@ -5440,7 +5688,8 @@ table td:nth-child(3) {
     }
 
     .wishes-block .title,
-    .promocode-block .title {
+    .promocode-block .title,
+    .pka-wrapper .have-wishes .title {
         font-size: 24px;
         line-height: 27px;
     }
@@ -5648,6 +5897,10 @@ table td:nth-child(3) {
 
     .main-block .container {
         min-height: 370px;
+    }
+
+    .pka-wrapper .main-block .container {
+        z-index: auto;
     }
 
     .kv {
@@ -5928,6 +6181,10 @@ table td:nth-child(3) {
         text-align: center;
     }
 
+    .pka-wrapper .main-wishes-info .title {
+        font-size: 24px;
+    }
+
     .main-wish-steps {
         margin-bottom: 50px;
     }
@@ -5955,13 +6212,18 @@ table td:nth-child(3) {
         left: 95px;
     }
 
+    .pka-wrapper .main-wishes-remark {
+        top: 350px;
+    }
+
     .other-wishes-title {
         font-size: 21px;
         text-align: center;
         margin-bottom: 20px;
     }
 
-    .main-wishes-slider-wrapper {
+    .main-wishes-slider-wrapper,
+    .pka-wrapper .main-wishes-slider-wrapper {
         min-height: auto;
         padding-top: 0;
     }
@@ -6136,6 +6398,12 @@ table td:nth-child(3) {
         background-size: 301px;
     }
 
+    .pka-wrapper .kv {
+        min-height: 449px;
+        background: url(../img/5ka/kv-mob.png) center no-repeat;
+        background-size: 423px;
+    }
+
     .perekrestok-wrapper .steps-block {
         padding-top: 120px;
     }
@@ -6154,6 +6422,11 @@ table td:nth-child(3) {
         max-width: 347px;
         height: 98px;
         background: url(../img/perekrestok/kv-text.png) center no-repeat;
+        background-size: contain;
+    }
+
+    .pka-wrapper .steps-block::after {
+        background: url(../img/5ka/kv-text-mob.png) center no-repeat;
         background-size: contain;
     }
 
@@ -6199,10 +6472,18 @@ table td:nth-child(3) {
         max-width: 340px;
     }
 
+    .pka-wrapper .prizes::before {
+        top: 115px;
+    }
+
     .prizes::after {
         bottom: -190px;
         width: 390px;
         transform: scale(-1, 1);
+    }
+
+    .pka-wrapper .prizes::after {
+        bottom: -150px;
     }
 
     .prizes .prize {
@@ -6219,9 +6500,22 @@ table td:nth-child(3) {
         padding-right: 80px;
     }
 
+    .pka-wrapper .prize.prize1 {
+        -ms-align-items: flex-end;
+        align-items: flex-end;
+        margin-bottom: 70px;
+        padding-left: 80px;
+        padding-right: 0;
+    }
+
     .prize.prize2 {
         margin-left: auto;
         padding-left: 160px;
+    }
+
+    .pka-wrapper .prize.prize2 {
+        order: -1;
+        margin-bottom: 70px;
     }
 
     .prizes .prize1 .prize-img {
@@ -6231,6 +6525,12 @@ table td:nth-child(3) {
         bottom: 0;
         width: 80px;
         margin: auto;
+    }
+
+    .pka-wrapper .prizes .prize1 .prize-img {
+        left: 0;
+        right: auto;
+        width: 150px;
     }
 
     .prizes .prize2 .prize-img {
@@ -6243,8 +6543,21 @@ table td:nth-child(3) {
         transform: rotate(5deg);
     }
 
+    .pka-wrapper .prizes .prize2 .prize-img {
+        transform: none;
+    }
+
     .prizes .prize3 {
         order: -1;
+    }
+
+    .pka-wrapper .prizes .prize3 .prize-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 149px;
+        margin: auto;
     }
 
     .prize-title {
@@ -6269,17 +6582,41 @@ table td:nth-child(3) {
         text-align: left;
     }
 
+    .pka-wrapper .prize-name span {
+        font-size: 33px;
+    }
+
+    .pka-wrapper .prize1 .prize-name, 
+    .pka-wrapper .prize1 .prize-text,
+    .pka-wrapper .prize2 .prize-name, 
+    .pka-wrapper .prize2 .prize-text {
+        text-align: right;
+    }
+
+    .pka-wrapper .prize3 .prize-name {
+        max-width: 180px;
+    }
+
+    .pka-wrapper .prize3 .prize-name span {
+        font-size: 21px;
+    }
+
     .prize-text {
         font-size: 14px;
         line-height: 17px;
         text-align: left;
     }
 
+    .pka-wrapper .prize3 .prize-text {
+        max-width: 180px;
+    }
+
     .feedback-block {
         padding-top: 50px;
     }
 
-    .feedback-block::before {
+    .feedback-block::before,
+    .pka-wrapper .feedback-block::before {
         top: -35px;
         height: 590px;
         background: url(../img/bg7-mob.png) center 0 no-repeat;
@@ -6329,6 +6666,42 @@ table td:nth-child(3) {
     .big-glow1 {
         opacity: .3;
     }
+
+    .lk-prizes-5ka {
+        min-height: 220px;
+    }
+
+    .lk-prize-item-5ka {
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .lk-prize-item-5ka-img {
+        max-width: 150px;
+    }
+
+    .lk-prize-item-5ka-info {
+        margin-left: 10px;
+        text-align: right;
+    }
+
+    .lk-prize-item-5ka-name {
+        font-size: 21px;
+        line-height: 24px;
+    }
+
+    .lk-prize-item-5ka-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .lk-prize-item-5ka-link {
+        position: absolute;
+        bottom: -5px;
+        right: 0;
+        font-size: 12px;
+        line-height: 1;
+    }
 }
 
 @media (max-width: 375px) {
@@ -6342,6 +6715,24 @@ table td:nth-child(3) {
     .tab {
         width: 92px;
         margin: 0 auto;
+    }
+
+    .pka-wrapper .prize.prize2 {
+        padding-left: 100px;
+    }
+
+    .pka-wrapper .prizes .prize1 .prize-img,
+    .pka-wrapper .prizes .prize2 .prize-img,
+    .pka-wrapper .prizes .prize3 .prize-img {
+        width: 100px;
+    }
+
+    .pka-wrapper .kv {
+        background-size: 375px;
+    }
+
+    .pka-wrapper .main-wish-step-title {
+        font-size: 15px;
     }
 }
 

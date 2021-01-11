@@ -442,7 +442,7 @@ $(document).ready(function () {
         var wrap = $('.wishes-slider');
 
         var swiper = new Swiper(wrap, {
-            effect: 'fade',
+            // effect: 'fade',
             loop: false,
             autoplay: true,
             autoplaySpeed: 3000,
