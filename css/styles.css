@@ -4278,20 +4278,33 @@ table td:nth-child(3) {
 }
 
 .pka-wrapper .steps-block::before {
-    height: 1783px;
+    top: -280px;
+    height: 1445px;
     background: url(../img/5ka/bg2.png) center 0 no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+}
+
+@media (min-width: 1921px) {
+    .pka-wrapper .steps-block::before {
+        background-size: 100% 100%;
+    }
 }
 
 .pka-wrapper .bg2-top {
     position: absolute;
-    top: 500px;
+    top: 380px;
     left: 0;
     right: 0;
     width: 100%;
-    height: 542px;
+    height: 693px;
     background: url(../img/5ka/bg2-top.png) center 0 no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+}
+
+@media (min-width: 1921px) {
+    .pka-wrapper .bg2-top {
+        background-size: 100% 100%;
+    }
 }
 
 .perekrestok-wrapper .steps-block::after {
@@ -4307,7 +4320,8 @@ table td:nth-child(3) {
 
 .pka-wrapper .steps-block::after {
     top: -115px;
-    right: 190px;
+    left: 0;
+    right: -920px;
     max-width: 333px;
     height: 31px;
     background: url(../img/5ka/kv-date.png) center no-repeat;
@@ -4713,8 +4727,8 @@ table td:nth-child(3) {
 
 .main-block .kv-text {
     position: absolute;
-    top: 590px;
-    left: -800px;
+    top: 580px;
+    left: -580px;
     right: 0;
     width: 642px;
     height: 83px;
@@ -4734,14 +4748,16 @@ table td:nth-child(3) {
         right: -900px;
     }
 
-    .main-block .kv-text {
-        top: 580px;
-        left: -615px;
+    .pka-wrapper .steps-block::after {
+        left: 0;
+        right: -920px;
     }
 }
 
 @media (max-width: 1366px) {
 	.steps-block::before,
+    .pka-wrapper .steps-block::before,
+    .pka-wrapper .bg2-top,
     footer::before {
 		background-size: cover;
 	}
@@ -4753,6 +4769,10 @@ table td:nth-child(3) {
     .perekrestok-wrapper .steps-block::after {
         left: 0;
         right: -800px;
+    }
+
+    .pka-wrapper .steps-block::after {
+        right: -920px;
     }
 }
 
@@ -4817,8 +4837,12 @@ table td:nth-child(3) {
     }
 
     .perekrestok-wrapper .steps-block::after {
-        left: auto;
-        right: 15px;
+        top: -110px;
+        left: 0;
+        right: -720px;
+        max-width: 300px;
+        background-size: 300px;
+        transform: rotate(-5deg);
     }
 
     .kv {
@@ -6023,9 +6047,14 @@ table td:nth-child(3) {
         max-width: 100%;
     }
 
+    .main-prizes-slider-wrapper:nth-child(2) {
+        order: -1;
+    }
+
     .main-prizes-slide {
         max-width: 270px;
         height: 180px;
+        margin: auto;
         padding: 20px;
         border-radius: 25px;
         overflow: hidden;
@@ -6036,6 +6065,10 @@ table td:nth-child(3) {
         font-size: 16px;
         line-height: 1.1;
         margin-bottom: 10px;
+    }
+
+    .main-prizes-slider-title span {
+        font-size: 12px;
     }
 
     .main-prizes-slider-title br {
@@ -6665,7 +6698,8 @@ table td:nth-child(3) {
     }
 
     .big-glow1 {
-        opacity: .3;
+        background: url(../img/big-glow1-mob.png) center 690px no-repeat;
+        background-size: 360px;
     }
 
     .lk-prizes-5ka {
