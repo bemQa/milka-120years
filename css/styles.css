@@ -2695,6 +2695,11 @@ table td:nth-child(3) {
     text-transform: uppercase;
 }
 
+.prize-ended {
+    font-size: 20px;
+    line-height: 24px;
+}
+
 .lk-draw-items {
     display: flex;
     -ms-align-items: center;
@@ -5553,6 +5558,10 @@ table td:nth-child(3) {
         font-size: 12px;
         line-height: 18px;
         text-align: left;
+    }
+
+    .prize-ended {
+        font-size: 15px;
     }
 
     .lk-prize-item-link br {
