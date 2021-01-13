@@ -4743,6 +4743,26 @@ table td:nth-child(3) {
     z-index: 1;
 }
 
+header ~ .plug-page {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.plug-logo {
+    max-width: 496px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.plug-text {
+    max-width: 660px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: center;
+}
+
 @media (max-width: 1440px) {
     .main-block::after {
         bottom: -100px;
@@ -6745,6 +6765,32 @@ table td:nth-child(3) {
         right: 0;
         font-size: 12px;
         line-height: 1;
+    }
+
+    .plug-logo {
+        max-width: 316px;
+    }
+
+    .plug-text {
+        max-width: 320px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .lang-wrap.lang-plug {
+        right: 15px;
+    }
+
+    .plug-footer {
+        min-height: 340px;
+    }
+
+    .plug-footer::before {
+        height: 390px;
+    }
+
+    .plug-footer .footer-copyright {
+        top: 140px;
     }
 }
 
