@@ -438,6 +438,20 @@ $(document).ready(function () {
         swiper.init();
     }
 
+    if ($('.products-slider-9').length) {
+        var wrap = $('.products-slider-9');
+
+        var swiper = new Swiper(wrap, {
+            slidesPerView: 2,
+            loop: false,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+        swiper.init();
+    }
+
     if ($('.wishes-slider').length) {
         var wrap = $('.wishes-slider');
 
