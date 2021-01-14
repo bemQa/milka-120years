@@ -3724,6 +3724,11 @@ table td:nth-child(3) {
     background-size: 100% 100%;
 }
 
+.pka-wrapper .main-wishes-block::before {
+    background: #3b2c72 url(../img/bg3.png) center 0 no-repeat;
+    background-size: 100% 100%;
+}
+
 .big-glow2 {
     position: absolute;
     top: -110px;
@@ -4465,6 +4470,10 @@ table td:nth-child(3) {
     z-index: 0;
 }
 
+.pka-wrapper .prizes::after {
+    bottom: -85px;
+}
+
 .prize {
     margin: 0 auto;
 }
@@ -4531,6 +4540,7 @@ table td:nth-child(3) {
 .feedback-block {
     position: relative;
     min-height: 300px;
+    margin-bottom: 30px;
 }
 
 .pka-wrapper .feedback-block {
@@ -4904,6 +4914,10 @@ header ~ .plug-page {
         width: 541px;
         height: 75px;
         background-size: 541px;
+    }
+
+    .pka-wrapper .main-wishes-info .title {
+        font-size: 37px;
     }
 }
 
@@ -6234,7 +6248,8 @@ header ~ .plug-page {
         padding-top: 80px;
     }
 
-    .main-wishes-block::before {
+    .main-wishes-block::before,
+    .pka-wrapper .main-wishes-block::before {
         top: -35px;
         height: 1082px;
         background: url(../img/bg3-mob.png) center 0 no-repeat;
