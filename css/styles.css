@@ -2639,7 +2639,7 @@ table td:nth-child(3) {
     position: absolute;
     top: 22px;
     left: 0;
-    right: -120px;
+    right: -150px;
     width: 13px;
     height: 13px;
     margin: auto;
@@ -5624,7 +5624,6 @@ header ~ .plug-page {
 
     .how-get-promocode {
         top: 8px;
-        right: -95px;
     }
 
     .lk-prize-item-link-error::before {
