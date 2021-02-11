@@ -5935,6 +5935,10 @@ header ~ .plug-page {
         margin: auto;
     }
 
+    .winners-decor3 {
+        top: -125px;
+    }
+
     .main-cookie-h1 {
         font-size: 30px;
         line-height: 34px;
