@@ -791,6 +791,24 @@ header ~ .inner-page {
     background-size: contain;
 }
 
+.sensations-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -8px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 108px;
+    height: 29px;
+    background: url(../img/sensations-link.svg) center no-repeat;
+    background-size: contain;
+}
+
+.sensations-link:hover {
+    background: none;
+}
+
 .lang-wrap {
 	position: absolute;
 	top: 0;
@@ -4799,6 +4817,267 @@ header ~ .plug-page {
     text-align: center;
 }
 
+.sensations {
+    position: relative;
+    min-height: 768px;
+    background: url(../img/sensations/bg.jpg) center 0 no-repeat;
+    background-size: 100% 885px;
+}
+
+.sensations::before {
+    content: '';
+    position: absolute;
+    bottom: -135px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 193px;
+    background: url(../img/sensations/stol.jpg) center 0 no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.sensations-logo {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 190px;
+}
+
+.sensations-img {
+    position: absolute;
+    top: 204px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 525px;
+    height: 447px;
+    background: url(../img/sensations/sensations.png) center no-repeat;
+    background-size: contain;
+    z-index: 2;
+}
+
+.sensations-text1 {
+    position: absolute;
+    top: 382px;
+    left: -900px;
+    right: 0;
+    margin: auto;
+    width: 397px;
+    height: 50px;
+    background: url(../img/sensations/sensations-text1.png) center no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+.sensations-text2 {
+    position: absolute;
+    top: 385px;
+    left: 0;
+    right: -950px;
+    margin: auto;
+    width: 449px;
+    height: 47px;
+    background: url(../img/sensations/sensations-text2.png) center no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+.sensations-packs {
+    position: absolute;
+    top: 508px;
+    left: -600px;
+    right: 0;
+    margin: auto;
+    width: 534px;
+    height: 274px;
+    background: url(../img/sensations/packs.png) center no-repeat;
+    background-size: contain;
+    z-index: 3;
+}
+
+.sensations-milk {
+    position: absolute;
+    top: 496px;
+    left: 0;
+    right: -950px;
+    margin: auto;
+    width: 130px;
+    height: 250px;
+    background: url(../img/sensations/milk.png) center no-repeat;
+    background-size: contain;
+    z-index: 3;
+}
+
+.sensations-shops {
+    position: relative;
+    padding: 85px 0 90px;
+    background: url(../img/sensations/shops-bg.png) center no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.sensations-shops-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #3B2C72;
+}
+
+.sensations-shops-wrapper {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    width: 100%;
+    margin: 15px auto 0;
+}
+
+.sensations-shop {
+    max-width: 213px;
+    width: 100%;
+    margin: 10px;
+}
+
+.sensations-products {
+    position: relative;
+    padding: 50px 0 140px;
+}
+
+.sensations-products::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 982px;
+    background: url(../img/sensations/products-bg.png) center 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.sensations-products-wrapper {
+    max-width: 1040px;
+    width: 100%;
+    margin: auto;
+}
+
+.sensations-product {
+    position: relative;
+    width: 586px;
+    height: 286px;
+    padding: 25px;
+    background: url(../img/sensations/product-bg.png) center no-repeat;
+    background-size: 100% 100%;
+}
+
+.sensations-product::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 92px;
+    height: 180px;
+    background: url(../img/sensations/sensations-icon.svg) center no-repeat #3B2C72;
+    background-size: contain;
+    z-index: 1;
+}
+
+.sensations-product:nth-child(1) {
+    padding-left: 80px;
+    padding-right: 110px;
+    margin-left: 50px;
+    margin-bottom: 70px;
+}
+
+.sensations-product:nth-child(1)::before {
+    left: -46px;
+}
+
+.sensations-product:nth-child(2) {
+    margin-left: auto;
+    margin-right: 50px;
+    padding-left: 135px;
+    padding-right: 100px;
+}
+
+.sensations-product:nth-child(2)::before {
+    right: -46px;
+}
+
+.sensations-product-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.sensations-product:nth-child(1) .sensations-product-img {
+    top: 18px;
+    right: -405px;
+    width: 524px;
+    height: 267px;
+}
+
+.sensations-product:nth-child(2) .sensations-product-img {
+    top: 24px;
+    left: -410px;
+    width: 515px;
+    height: 262px;
+}
+
+.sensations-product-title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sensations-product-weight {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 24px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    background: #9179C2;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.sensations-product-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.sensations-footer {
+    min-height: 120px;
+    padding: 0 0 30px;
+}
+
+.sensations-footer::before {
+    display: none;
+}
+
+.sensations-footer .footer-socials {
+    justify-content: flex-end;
+    width: 173px;
+    margin-bottom: 0;
+}
+
 @media (max-width: 1440px) {
     .main-block::after {
         bottom: -100px;
@@ -4812,6 +5091,30 @@ header ~ .plug-page {
     .pka-wrapper .steps-block::after {
         left: 0;
         right: -920px;
+    }
+
+    .sensations {
+        background-size: auto 885px;
+    }
+
+    .sensations-img {
+        transform: scale(.8);
+    }
+
+    .sensations-text1 {
+        transform: scale(.8) translateX(25%);
+    }
+
+    .sensations-text2 {
+        transform: scale(.8) translateX(-25%);
+    }
+
+    .sensations-packs {
+        transform: scale(.8) translateX(15%);
+    }
+
+    .sensations-milk {
+        transform: scale(.8) translateX(-70%);
     }
 }
 
@@ -4844,12 +5147,16 @@ header ~ .plug-page {
 
     .menu-links,
     .tm-menu-links {
-	    max-width: 800px;
+	    max-width: 850px;
     }
 
     .menu-link {
         font-size: 14px;
         padding: 0 8px;
+    }
+
+    .sensations-link::before {
+        left: -15px;
     }
 
     .lang-wrap {
@@ -4935,6 +5242,30 @@ header ~ .plug-page {
 
     .pka-wrapper .main-wishes-info .title {
         font-size: 37px;
+    }
+
+    .sensations {
+        min-height: 730px;
+    }
+
+    .sensations-img {
+        transform: scale(.7);
+    }
+
+    .sensations-text1 {
+        transform: scale(.7) translateX(45%);
+    }
+
+    .sensations-text2 {
+        transform: scale(.7) translateX(-45%);
+    }
+
+    .sensations-packs {
+        transform: scale(.7) translateX(25%);
+    }
+
+    .sensations-milk {
+        transform: scale(.7) translateX(-140%);
     }
 }
 
@@ -5120,6 +5451,12 @@ header ~ .plug-page {
 
     .menu-links.active {
         right: 0;
+    }
+
+    .sensations-link::before {
+        left: -10px;
+        width: 128px;
+        height: 36px;
     }
 
     .menu .login-link.mobile-visible {
@@ -6845,6 +7182,184 @@ header ~ .plug-page {
     .plug-footer .footer-copyright {
         top: 140px;
     }
+
+    .sensations {
+        min-height: 768px;
+    }
+
+    .sensations::before {
+        bottom: -77px;
+        height: 107px;
+    }
+
+    .sensations-img {
+        transform: none;
+        top: 192px;
+        width: 314px;
+        height: 267px;
+    }
+
+    .sensations-text1 {
+        transform: none;
+        top: 480px;
+        left: 0;
+        width: 273px;
+        height: 34px;
+    }
+
+    .sensations-text2 {
+        transform: none;
+        top: 520px;
+        right: 0;
+        width: 309px;
+        height: 32px;
+    }
+
+    .sensations-packs {
+        transform: none;
+        top: 570px;
+        left: -50px;
+        right: -50px;
+        width: 375px;
+        height: 220px;
+        background: url(../img/sensations/packs-mob.png) center no-repeat;
+        background-size: 375px;
+    }
+
+    .sensations-milk {
+        transform: none;
+        top: 743px;
+        right: -200px;
+        width: 49px;
+        height: 95px;
+    }
+
+    .sensations-shops {
+        padding: 70px 0 65px;
+        background: url(../img/sensations/shops-bg-mob.png) center no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .sensations-shops-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .sensations-shops-wrapper {
+        flex-direction: column;
+        max-width: 213px;
+    }
+
+    .sensations-products {
+        padding: 130px 0 80px;
+    }
+
+    .sensations-products::before {
+        height: 1185px;
+        background: url(../img/sensations/products-bg-mob.png) center 0 no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .sensations-products-wrapper {
+        max-width: 340px;
+    }
+
+    .sensations-product {
+        width: 340px;
+        height: 356px;
+        padding: 0 10px;
+        background: url(../img/sensations/product-bg-mob.png) center no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .sensations-product:nth-child(1) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 144px;
+        padding: 50px 10px 35px;
+    }
+
+    .sensations-product:nth-child(2) {
+        height: 321px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px 10px 35px;
+    }
+
+    .sensations-product:nth-child(1)::before,
+    .sensations-product:nth-child(2)::before {
+        top: auto;
+        left: 0;
+        right: 0;
+        bottom: -27px;
+        width: 50px;
+        height: 56px;
+    }
+
+    .sensations-product:nth-child(1) .sensations-product-img {
+        top: -90px;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        width: 262px;
+        height: 134px;
+    }
+
+    .sensations-product:nth-child(2) .sensations-product-img {
+        top: -86px;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        width: 256px;
+        height: 131px;
+    }
+
+    .sensations-product-title {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .sensations-product-weight {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .sensations-product-text {
+        max-width: 300px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .sensations-footer {
+        padding-top: 30px;
+    }
+
+    .sensations-footer .footer-wrapper {
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    .sensations-footer .footer-socials {
+        order: -1;
+        justify-content: center;
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    .footer-copyright {
+        position: static;
+        top: auto;
+        margin-bottom: 30px;
+    }
+
+    .sensations-footer .footer-contacts {
+        order: 1;
+    }
 }
 
 @media (max-width: 375px) {
@@ -6876,6 +7391,14 @@ header ~ .plug-page {
 
     .pka-wrapper .main-wish-step-title {
         font-size: 15px;
+    }
+
+    .sensations-products .container {
+        padding: 0 10px;
+    }
+
+    .sensations-product {
+        width: 300px;
     }
 }
 
