@@ -3729,8 +3729,14 @@ table td:nth-child(3) {
 
 .main-wishes-block {
     position: relative;
-    min-height: 930px;
+    min-height: 900px;
     padding-top: 180px;
+}
+
+.main-wishes-block2 {
+    position: relative;
+    min-height: 930px;
+    padding-top: 0;
 }
 
 .main-wishes-block::before {
@@ -3741,9 +3747,23 @@ table td:nth-child(3) {
     right: 0;
     margin: auto;
     width: 100%;
-    height: 1080px;
+    height: 1190px;
     background: url(../img/bg3.png) center 0 no-repeat;
     background-size: 100% 100%;
+}
+
+.main-wishes-block2::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1080px;
+    background: url(../img/bg32.png) center 0 no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
 }
 
 .pka-wrapper .main-wishes-block::before {
@@ -3762,6 +3782,15 @@ table td:nth-child(3) {
     margin: auto;
     background: url(../img/big-glow2.png) center no-repeat;
     background-size: 1366px;
+}
+
+.main-wishes-block2 .big-glow2 {
+    top: -40px;
+    z-index: 1;
+}
+
+.main-wishes-block2 .container {
+    z-index: 1;
 }
 
 .main-wishes-wrapper {
@@ -3789,7 +3818,7 @@ table td:nth-child(3) {
     margin: 10px 0;
 }
 
-.main-wish-step:last-child {
+.main-wishes-block2 .main-wish-step:last-child {
     margin-top: 50px;
 }
 
@@ -3862,6 +3891,25 @@ table td:nth-child(3) {
 
 .pka-wrapper .main-wish-step-text {
     min-height: 22px;
+}
+
+.main-wish-qr-wrapper {
+    display: flex;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.main-wish-qr {
+    max-width: 164px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.main-wish-qr-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
 }
 
 .other-wishes-title {
@@ -3940,7 +3988,7 @@ table td:nth-child(3) {
 
 .milka-challenge-title {
     position: absolute;
-    top: 210px;
+    top: 360px;
     left: 0;
     right: -860px;
     margin: auto;
@@ -3949,7 +3997,7 @@ table td:nth-child(3) {
 
 .milka-pack-big {
     position: absolute;
-    top: 130px;
+    top: 230px;
     left: 0;
     right: -215px;
     margin: auto;
@@ -3961,7 +4009,7 @@ table td:nth-child(3) {
 
 .milka-pieces {
     position: absolute;
-    top: -85px;
+    top: 15px;
     left: 0;
     right: -550px;
     margin: auto;
@@ -3973,7 +4021,7 @@ table td:nth-child(3) {
 
 .milka-packs {
     position: absolute;
-    top: 470px;
+    top: 630px;
     left: 0;
     right: -900px;
     margin: auto;
@@ -5187,9 +5235,13 @@ header ~ .plug-page {
 		background-size: cover;
 	}
 
-    /*.main-wishes-info {
+    .main-wishes-info {
         max-width: 450px;
-    }*/
+    }
+
+    .main-wishes-block2 .main-wishes-info {
+        max-width: 600px;
+    }
 
     .perekrestok-wrapper .steps-block::after {
         left: 0;
@@ -6678,8 +6730,13 @@ header ~ .plug-page {
     }
 
     .main-wishes-block {
+        min-height: 720px;
+        padding-top: 80px;
+    }
+
+    .main-wishes-block2 {
         min-height: 900px;
-        padding-top: 220px;
+        padding-top: 50px;
     }
 
     .main-wishes-block::before,
@@ -6688,6 +6745,14 @@ header ~ .plug-page {
         height: 1082px;
         background: url(../img/bg3-mob.png) center 0 no-repeat;
         background-size: 100% 100%;
+    }
+
+    .main-wishes-block2 .big-glow2 {
+        top: 0;
+        left: -500px;
+        right: -500px;
+        background: url(../img/big-glow22-mob.png) center no-repeat;
+        background-size: 100% 949px;
     }
 
     .main-wishes-wrapper {
@@ -6711,7 +6776,7 @@ header ~ .plug-page {
         padding-left: 80px;
     }
 
-    .main-wish-step:last-child {
+    .main-wishes-block2 .main-wish-step:last-child {
         margin-top: 20px;
     }
 
@@ -6742,6 +6807,11 @@ header ~ .plug-page {
         top: 350px;
     }
 
+    .main-wish-step .btn-wrapper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .other-wishes-title {
         font-size: 21px;
         text-align: center;
@@ -6769,25 +6839,23 @@ header ~ .plug-page {
     }
 
     .milka-challenge-title {
-        top: -160px;
-        right: 0;
+        top: 660px;
+        right: -150px;
         width: 156px;
         transform: none;
     }
 
     .milka-pack-big {
-        top: 380px;
+        top: 480px;
         left: -150px;
         right: 0;
-        width: 198px;
-        height: 365px;
-        background: url(../img/milka-challenge/milka-pack-big-mob.png) center no-repeat;
-        background-size: contain;
+        width: 265px;
+        height: 369px;
         transform: none;
     }
 
     .milka-pieces {
-        top: 420px;
+        top: 470px;
         left: 0;
         right: -150px;
         width: 179px;
@@ -6798,6 +6866,7 @@ header ~ .plug-page {
     }
 
     .milka-packs {
+        display: none;
         top: 575px;
         left: 0;
         right: -170px;
