@@ -5187,6 +5187,21 @@ header ~ .plug-page {
     margin-bottom: 0;
 }
 
+.candle-block {
+    z-index: 1;
+}
+
+.candle-block::after {
+    top: -100px;
+    height: 454px;
+    background: url(../img/lk-candle-glow.png) center 0 no-repeat;
+    background-size: 1002px;
+}
+
+.candle-block .subtitle a {
+    color: #fff;
+}
+
 @media (max-width: 1440px) {
     .main-block::after {
         bottom: -100px;
@@ -7544,7 +7559,7 @@ header ~ .plug-page {
         margin-bottom: 30px;
     }
 
-    .footer-copyright {
+    .sensations-footer .footer-copyright {
         position: static;
         top: auto;
         margin-bottom: 30px;
@@ -7552,6 +7567,19 @@ header ~ .plug-page {
 
     .sensations-footer .footer-contacts {
         order: 1;
+    }
+
+    .candle-block {
+        min-height: auto;
+        padding: 100px 0;
+    }
+
+    .candle-block::after {
+        top: -30px;
+        width: 159px;
+        height: 153px;
+        background: url(../img/lk-candle-glow-mob.png) center 0 no-repeat;
+        background-size: contain;
     }
 }
 
