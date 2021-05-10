@@ -6793,6 +6793,7 @@ header ~ .plug-page {
 
     .main-wishes-block2 .main-wish-step:last-child {
         margin-top: 20px;
+        z-index: 1;
     }
 
     .main-wish-step-num {
