@@ -279,6 +279,11 @@ zxing-scanner {
     overflow: hidden;
 }
 
+zxing-scanner video {
+    border-radius: 30px;
+    overflow: hidden;
+}
+
 app-root button {
     position: relative;
     display: flex;
