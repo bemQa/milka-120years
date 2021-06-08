@@ -280,7 +280,7 @@ zxing-scanner {
 }
 
 zxing-scanner video {
-    border-radius: 30px;
+    border-radius: 28px;
     overflow: hidden;
 }
 
