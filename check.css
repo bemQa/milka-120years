@@ -275,12 +275,12 @@ zxing-scanner {
     width: 200px !important;
     height: 200px !important;
     margin: 0 auto 20px !important;
-    border-radius: 30px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
 zxing-scanner video {
-    border-radius: 28px;
+    border-radius: 19px;
     overflow: hidden;
 }
 
@@ -320,7 +320,7 @@ dropzone {
     min-height: 156px;
     border: 3px solid #3B2C72;
     background: #fff;
-    border-radius: 30px;
+    border-radius: 20px;
     margin: 0 auto 25px;
 }
 
