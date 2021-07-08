@@ -5202,6 +5202,15 @@ header ~ .plug-page {
     color: #fff;
 }
 
+.original-banner {
+    max-width: 1200px;
+    height: 460px;
+    padding: 0;
+    border-radius: 0;
+    background: url(../img/original-banner.jpg) center no-repeat;
+    background-size: contain;
+}
+
 @media (max-width: 1440px) {
     .main-block::after {
         bottom: -100px;
@@ -7580,6 +7589,15 @@ header ~ .plug-page {
         width: 159px;
         height: 153px;
         background: url(../img/lk-candle-glow-mob.png) center 0 no-repeat;
+        background-size: contain;
+    }
+
+    .original-banner {
+        max-width: 375px;
+        height: 273px;
+        padding: 0;
+        border-radius: 0;
+        background: url(../img/original-banner-mob.jpg) center no-repeat;
         background-size: contain;
     }
 }
